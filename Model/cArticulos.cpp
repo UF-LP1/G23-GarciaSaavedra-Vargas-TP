@@ -10,6 +10,10 @@
  */
 
 
+cArticulos::cArticulos()
+{
+}
+
 /**
  * @param string Articulo
  * @param double Precio
@@ -19,7 +23,9 @@
 cArticulos::cArticulos(string Articulo, double Precio, const string Codigo, double Stock) {
 
 }
-
+cArticulos::~cArticulos()
+{
+}
 /**
  * @return void
  */
@@ -48,7 +54,4 @@ void cArticulos::set_Precio(double) {
  */
 void cArticulos::get_codigo() {
     return;
-}
-cArticulos::~cArticulos()
-{
 }

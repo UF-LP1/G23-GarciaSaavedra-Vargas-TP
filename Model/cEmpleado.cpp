@@ -3,10 +3,10 @@
  */
 
 
-#include "cEpleado.h"
+#include "cEmpleado.h"
 
 /**
- * cEpleado implementation
+ * cEmpleado implementation
  */
 
 
@@ -16,7 +16,13 @@
  * @param const string Dni
  * @param time Horario
  */
-void cEpleado::cEmpleadoVentas(string NombreYApellido,const string Dni, time_t Horario) {
+cEmpleado::cEmpleado() {
+
+}
+cEmpleado::cEmpleado(string NombreYApellido, const string Dni, time_t Horario) {
+
+}
+cEmpleado::~cEmpleado() {
 
 }
 
@@ -25,7 +31,7 @@ void cEpleado::cEmpleadoVentas(string NombreYApellido,const string Dni, time_t H
  * @param cArticulos
  * @return void
  */
-void cEpleado::AtenderCliente(cCliente,cArticulos) {
+void cEmpleado::AtenderCliente(cCliente,cArticulos) {
     return;
 }
 
@@ -33,7 +39,7 @@ void cEpleado::AtenderCliente(cCliente,cArticulos) {
  * @param cTicket
  * @return void
  */
-void cEpleado::DarConsejosYRecomendaciones(cTicket) {
+void cEmpleado::DarConsejosYRecomendaciones(cTicket) {
     return;
 }
 
@@ -41,10 +47,6 @@ void cEpleado::DarConsejosYRecomendaciones(cTicket) {
  * @param cTicket
  * @return void
  */
-void cEpleado::AplicarDescuento(cTicket) {
+void cEmpleado::AplicarDescuento(cTicket) {
     return;
-}
-
-void cEpleado::cEmpleado() {
-
 }

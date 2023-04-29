@@ -138,10 +138,10 @@
     <ClCompile Include="..\Model\cEmpleadoFarmaceutico.cpp" />
     <ClCompile Include="..\Model\cEmpleadoOrtopedia.cpp" />
     <ClCompile Include="..\Model\cEmpleadoPerfumeria.cpp" />
-    <ClCompile Include="..\Model\cEpleado.cpp" />
+    <ClCompile Include="..\Model\cEmpleado.cpp" />
     <ClCompile Include="..\Model\cFarmacia.cpp" />
     <ClCompile Include="..\Model\cTicket.cpp" />
-    <ClCompile Include="..\Model\EmpleadoLimpieza.cpp" />
+    <ClCompile Include="..\Model\cEmpleadoLimpieza.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -149,19 +149,19 @@
     <ClInclude Include="..\Model\cArticulos.h" />
     <ClInclude Include="..\Model\cArtMedicamento.h" />
     <ClInclude Include="..\Model\cArtOrtopedia.h" />
-    <ClInclude Include="..\Model\cArtPerfumería.h" />
-    <ClInclude Include="..\Model\cAsistenteAutomático.h" />
+    <ClInclude Include="..\Model\cArtPerfumeria.h" />
+    <ClInclude Include="..\Model\cAsistenteAutomatico.h" />
     <ClInclude Include="..\Model\cCaja.h" />
     <ClInclude Include="..\Model\cCliente.h" />
     <ClInclude Include="..\Model\cEmpleadoFarmaceutico.h" />
     <ClInclude Include="..\Model\cEmpleadoOrtopedia.h" />
     <ClInclude Include="..\Model\cEmpleadoPerfumeria.h" />
-    <ClInclude Include="..\Model\cEpleado.h" />
+    <ClInclude Include="..\Model\cEmpleado.h" />
     <ClInclude Include="..\Model\cFarmacia.h" />
     <ClInclude Include="..\Model\cTicket.h" />
     <ClInclude Include="..\Model\eMedicamentos.h" />
     <ClInclude Include="..\Model\eMediosDePago.h" />
-    <ClInclude Include="..\Model\EmpleadoLimpieza.h" />
+    <ClInclude Include="..\Model\cEmpleadoLimpieza.h" />
     <ClInclude Include="..\Model\eNecesidad.h" />
     <ClInclude Include="..\Model\eOrtopedia.h" />
     <ClInclude Include="..\Model\ePerfumeria.h" />

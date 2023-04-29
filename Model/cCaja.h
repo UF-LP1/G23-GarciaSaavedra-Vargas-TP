@@ -13,8 +13,8 @@ public:
 /**
  * @param double Saldo
  */
-void Caja(double Saldo);
-    
+cCaja(double Saldo);
+~cCaja();
 /**
  * @param cCliente
  */
@@ -23,7 +23,6 @@ double Cobrar(cCliente);
 void get_Saldo();
 protected: 
     
-void Caja();
 private: 
     double Saldo;
 };

@@ -3,10 +3,10 @@
  */
 
 
-#include "cArtPerfumería.h"
+#include "cArtPerfumeria.h"
 
 /**
- * cArtPerfumería implementation
+ * cArtPerfumeria implementation
  */
 
 
@@ -15,14 +15,14 @@
  * @param bool Importado
  * @param ePerfumeria Productos
  */
-void cArtPerfumería::artPerfumería(string Origen,bool Importado, ePerfumeria Productos) {
+cArtPerfumeria::cArtPerfumeria(string Origen,bool Importado, ePerfumeria Productos) {
 
 }
 
 /**
  * @return void
  */
-void cArtPerfumería::get_Imprortado() {
+void cArtPerfumeria::get_Imprortado() {
     return;
 }
 
@@ -30,10 +30,10 @@ void cArtPerfumería::get_Imprortado() {
  * @param string
  * @return void
  */
-void cArtPerfumería::set_Origen(string) {
+void cArtPerfumeria::set_Origen(string) {
     return;
 }
 
-void cArtPerfumería::artPerfumeria() {
+cArtPerfumeria:: ~cArtPerfumeria() {
 
 }

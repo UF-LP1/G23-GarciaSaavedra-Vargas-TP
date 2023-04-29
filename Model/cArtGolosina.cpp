@@ -14,16 +14,17 @@
  * @param bool Frio
  * @param string Promocion
  */
-void cArtGolosina::artGolosina(bool Frio, string Promocion) {
+
+cArtGolosina::cArtGolosina(string Promocion) {
+
+}
+cArtGolosina::~cArtGolosina() {
 
 }
 
 /**
  * @return void
  */
-void cArtGolosina::get_Frio() {
-    return;
-}
 
 /**
  * @param string
@@ -31,8 +32,4 @@ void cArtGolosina::get_Frio() {
  */
 void cArtGolosina::set_Promocion(string Promocion) {
     return;
-}
-
-void cArtGolosina::artGolosina() {
-
 }

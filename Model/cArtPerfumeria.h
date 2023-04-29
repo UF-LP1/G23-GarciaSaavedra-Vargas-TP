@@ -3,14 +3,14 @@
  */
 
 
-#ifndef _CARTPERFUMERÍA_H
-#define _CARTPERFUMERÍA_H
+#ifndef _CARTPERFUMERIA_H
+#define _CARTPERFUMERIA_H
 
 #include "cArticulos.h"
 #include "ePerfumeria.h"
 
 
-class cArtPerfumería: public cArticulos {
+class cArtPerfumeria: public cArticulos {
 public: 
     
 /**
@@ -18,7 +18,8 @@ public:
  * @param bool Importado
  * @param ePerfumeria Productos
  */
-void artPerfumería(string Origen, bool Importado, ePerfumeria Productos);
+cArtPerfumeria(string Origen, bool Importado, ePerfumeria Productos);
+~cArtPerfumeria();
     
 void get_Imprortado();
     
@@ -28,11 +29,10 @@ void get_Imprortado();
 void set_Origen(string);
 protected: 
     
-void artPerfumeria();
 private: 
     string Origen;
     bool Importado;
     ePerfumeria Productos;
 };
 
-#endif //_CARTPERFUMERÍA_H
+#endif //_CARTPERFUMERIA_H

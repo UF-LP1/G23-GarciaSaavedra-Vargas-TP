@@ -48,7 +48,7 @@
     <ClCompile Include="..\Model\cEmpleadoPerfumeria.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cEpleado.cpp">
+    <ClCompile Include="..\Model\cEmpleado.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="..\Model\cFarmacia.cpp">
@@ -57,7 +57,7 @@
     <ClCompile Include="..\Model\cTicket.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\EmpleadoLimpieza.cpp">
+    <ClCompile Include="..\Model\cEmpleadoLimpieza.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
@@ -77,10 +77,10 @@
     <ClInclude Include="..\Model\cArtOrtopedia.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cArtPerfumería.h">
+    <ClInclude Include="..\Model\cArtPerfumeria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cAsistenteAutomático.h">
+    <ClInclude Include="..\Model\cAsistenteAutomatico.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Model\cCaja.h">
@@ -98,7 +98,7 @@
     <ClInclude Include="..\Model\cEmpleadoPerfumeria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cEpleado.h">
+    <ClInclude Include="..\Model\cEmpleado.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Model\cFarmacia.h">
@@ -113,7 +113,7 @@
     <ClInclude Include="..\Model\eMediosDePago.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\EmpleadoLimpieza.h">
+    <ClInclude Include="..\Model\cEmpleadoLimpieza.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Model\eNecesidad.h">

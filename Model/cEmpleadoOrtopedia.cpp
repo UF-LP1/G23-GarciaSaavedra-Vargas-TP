@@ -14,6 +14,6 @@ cEmpleadoOrtopedia::cEmpleadoOrtopedia() {
 
 }
 
-cEmpleadoOrtopedia::cEmpleadoOrtopedia() {
+cEmpleadoOrtopedia::~cEmpleadoOrtopedia() {
 
 }

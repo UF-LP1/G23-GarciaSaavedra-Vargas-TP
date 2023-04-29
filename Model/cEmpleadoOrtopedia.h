@@ -6,16 +6,16 @@
 #ifndef _CEMPLEADOORTOPEDIA_H
 #define _CEMPLEADOORTOPEDIA_H
 
-#include "cEpleado.h"
+#include "cEmpleado.h"
 
 
-class cEmpleadoOrtopedia: public cEpleado {
+class cEmpleadoOrtopedia: public cEmpleado {
 public: 
     
 cEmpleadoOrtopedia();
+~cEmpleadoOrtopedia();
 protected: 
     
- cEmpleadoOrtopedia();
 };
 
 #endif //_CEMPLEADOORTOPEDIA_H

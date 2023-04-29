@@ -13,8 +13,10 @@
 /**
  * @param double Saldo
  */
-void cCaja::Caja(double Saldo) {
-
+cCaja::cCaja(double Saldo)
+{
+}
+cCaja::~cCaja(){
 }
 
 /**
@@ -30,8 +32,4 @@ double cCaja::Cobrar(cCliente) {
  */
 void cCaja::get_Saldo() {
     return;
-}
-
-void cCaja::Caja() {
-
 }

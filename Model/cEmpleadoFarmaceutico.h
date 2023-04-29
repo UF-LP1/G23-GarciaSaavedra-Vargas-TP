@@ -6,10 +6,10 @@
 #ifndef _CEMPLEADOFARMACEUTICO_H
 #define _CEMPLEADOFARMACEUTICO_H
 
-#include "cEpleado.h"
+#include "cEmpleado.h"
 
 
-class cEmpleadoFarmaceutico: public cEpleado {
+class cEmpleadoFarmaceutico: public cEmpleado {
 public: 
     
 /**

@@ -15,8 +15,14 @@
  * @param bool ConReceta
  * @param string InstruccionesDeUso
  */
-void cArtOrtopedia::artOrtopedia(bool EmpaqueEspecial,bool ConReceta, string InstruccionesDeUso) {
 
+cArtOrtopedia::cArtOrtopedia(bool EmpaqueEspecial, bool ConReceta, string InstruccionesDeUso)
+{
+
+}
+
+cArtOrtopedia::~cArtOrtopedia()
+{
 }
 
 /**
@@ -32,8 +38,4 @@ void cArtOrtopedia::get_EntregaInstantanea() {
  */
 void cArtOrtopedia::set_InstruccionesDeUso(string) {
     return;
-}
-
-void cArtOrtopedia::artOrtopedia() {
-
 }

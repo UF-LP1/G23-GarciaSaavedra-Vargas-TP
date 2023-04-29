@@ -9,7 +9,7 @@
 #include <string>
 using namespace std;
 #include"cArticulos.h"
-#include "cEpleado.h"
+#include "cEmpleado.h"
 
 
 class cFarmacia {

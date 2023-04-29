@@ -19,8 +19,8 @@ public:
  * @param double PrecioFinal
  * @param eMediosDePago MetodosDePago
  */
-void Ticket(string CodigoTicket, double PrecioFinal, eMediosDePago MetodosDePago);
-    
+cTicket(string CodigoTicket, double PrecioFinal, eMediosDePago MetodosDePago);
+~cTicket();
 void get_PrecioFinal();
     
 /**
@@ -28,11 +28,11 @@ void get_PrecioFinal();
  */
 void AgregarProducto(cArticulos);
  
-~cTicket();
+
 private: 
     const string CodigoTicket;
-    double PrecioFinal;
-    eMediosDePago MetodoDePago;
+    double PrecioFinal = 2000;
+    eMediosDePago MetodoDePago {};
 };
 
 #endif //_CTICKET_H

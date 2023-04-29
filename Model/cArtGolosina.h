@@ -16,19 +16,18 @@ public:
  * @param bool Frio
  * @param string Promocion
  */
-void artGolosina(void bool Frio, void string Promocion);
+cArtGolosina(string Promocion);
+~cArtGolosina();
     
-void get_Frio();
-    
+   
 /**
  * @param string
  */
-void set_Promocion(void string);
+void set_Promocion(string);
+
 protected: 
     
-void artGolosina();
 private: 
-    bool Frio;
     string Promocion;
 };
 

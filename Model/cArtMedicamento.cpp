@@ -16,8 +16,12 @@
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-void cArtMedicamento::artMedicamento(string Dosis,bool VentaLibre,string IndicacionesEspeciales, eMedicamentos Productos) {
+cArtMedicamento::cArtMedicamento(string Dosis,bool VentaLibre,string IndicacionesEspeciales, eMedicamentos Productos) {
 
+}
+
+cArtMedicamento::~cArtMedicamento()
+{
 }
 
 /**

@@ -15,10 +15,12 @@
  * @param double PrecioFinal
  * @param eMediosDePago MetodosDePago
  */
-void cTicket::Ticket(string CodigoTicket, double PrecioFinal,eMediosDePago MetodosDePago) {
-
+cTicket::cTicket(string CodigoTicket, double PrecioFinal, eMediosDePago MetodosDePago)
+{
 }
-
+cTicket:: ~cTicket()
+{
+}
 /**
  * @return void
  */
@@ -34,6 +36,3 @@ void cTicket::AgregarProducto(cArticulos) {
     return;
 }
 
-cTicket:: ~cTicket()
-{
-}

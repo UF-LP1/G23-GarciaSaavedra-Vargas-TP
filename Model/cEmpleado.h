@@ -3,15 +3,15 @@
  */
 
 
-#ifndef _CEPLEADO_H
-#define _CEPLEADO_H
+#ifndef _CEMPLEADO_H
+#define _CEMPLEADO_H
 #include <iostream>
 #include <string>
 #include <time.h>
 using namespace std;
 #include "cCliente.h"
 
-class cEpleado {
+class cEmpleado {
 public: 
     
 /**
@@ -20,7 +20,9 @@ public:
  * @param const string Dni
  * @param time Horario
  */
-void cEmpleadoVentas(string NombreYApellido,const string Dni, time_t Horario);
+    cEmpleado();
+cEmpleado(string NombreYApellido,const string Dni, time_t Horario);
+~cEmpleado();
     
 /**
  * @param cCliente
@@ -40,9 +42,8 @@ void AplicarDescuento(cTicket);
 protected: 
       string NombreYApellido;
     const string Dni;
-    time_t Horario;
+    time_t Horario{};
     
-void cEmpleado();
 };
 
-#endif //_CEPLEADO_H
+#endif //_CEMPLEADO_H

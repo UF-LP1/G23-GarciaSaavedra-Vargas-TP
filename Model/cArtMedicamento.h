@@ -20,8 +20,8 @@ public:
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-void artMedicamento(string Dosis, bool VentaLibre, string IndicacionesEspeciales,eMedicamentos Productos);
-    
+cArtMedicamento(string Dosis, bool VentaLibre, string IndicacionesEspeciales,eMedicamentos Productos);
+~cArtMedicamento(); 
 void get_Dosis();
     
 /**

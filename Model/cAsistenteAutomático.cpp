@@ -3,14 +3,14 @@
  */
 
 
-#include "cAsistenteAutomático.h"
+#include "cAsistenteAutomatico.h"
 
 /**
  * cAsistenteAutomático implementation
  */
 
 
-void cAsistenteAutomático::AsistenteAutomático() {
+cAsistenteAutomatico::cAsistenteAutomatico() {
 
 }
 
@@ -18,10 +18,10 @@ void cAsistenteAutomático::AsistenteAutomático() {
  * @param cCliente
  * @return void
  */
-void cAsistenteAutomático::EntregarTicket(cCliente) {
+void cAsistenteAutomatico::EntregarTicket(cCliente) {
     return;
 }
 
-void cAsistenteAutomático::AsistenteAutomatico() {
+cAsistenteAutomatico::~cAsistenteAutomatico() {
 
 }

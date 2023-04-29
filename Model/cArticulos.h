@@ -8,6 +8,7 @@
 #include <string>
 using namespace std;
 
+
 class cArticulos {
 public:
 
@@ -17,8 +18,9 @@ public:
      * @param const string Codigo
      * @param double Stock
      */
+    cArticulos();
     cArticulos(string Articulo, double Precio, const string Codigo, double Stock);
-
+    ~cArticulos();
     void get_Articulo();
 
     /**
@@ -32,12 +34,12 @@ public:
     void set_Precio(double);
 
     void get_codigo();
-    ~cArticulos();
+  
 protected:
     string Articulo;
-    double Precio;
+    double Precio{};
     const string Codigo;
-    double Stock;
+    double Stock{};
 
 
 };

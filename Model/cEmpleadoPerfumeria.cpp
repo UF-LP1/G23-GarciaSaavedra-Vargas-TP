@@ -14,6 +14,6 @@ cEmpleadoPerfumeria::cEmpleadoPerfumeria() {
 
 }
 
-cEmpleadoPerfumeria::cEmpleadoPerfumeria() {
+cEmpleadoPerfumeria::~cEmpleadoPerfumeria() {
 
 }

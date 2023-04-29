@@ -34,8 +34,28 @@ void cCliente::SeleccionarProducto(const double Codigo) {
 /**
  * @return void
  */
-void cCliente::SeleccionarMedioPago() {
-    return;
+eMediosDePago cCliente::SeleccionarMedioPago(eMediosDePago) {
+    srand(time(nullptr));
+    int optionNum = std::rand() % 4;
+
+    eMediosDePago opcionSeleccionada{};
+
+    switch (optionNum) {
+    case 0:
+        opcionSeleccionada = Efectivo;
+        break;
+    case 1:
+        opcionSeleccionada = Debito;
+        break;
+    case 2:
+        opcionSeleccionada = Credito;
+        break;
+    case 3:
+        opcionSeleccionada = PagoCelular;
+        break;
+    }
+    eMediosDePago medioactual = opcionSeleccionada;
+    return opcionSeleccionada;
 }
 
 /**
@@ -48,7 +68,7 @@ void cCliente::Pagar() {
 /**
  * @return eNecesidad
  */
-eNecesidad cCliente::get_necesidad() {
+void cCliente::get_necesidad() {
     return;
 }
 

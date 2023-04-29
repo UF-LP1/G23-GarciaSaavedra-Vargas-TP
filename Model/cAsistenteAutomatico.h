@@ -3,13 +3,14 @@
  */
 
 
-#ifndef _CASISTENTEAUTOMÁTICO_H
-#define _CASISTENTEAUTOMÁTICO_H
-
-class cAsistenteAutomático {
+#ifndef _CASISTENTEAUTOMATICO_H
+#define _CASISTENTEAUTOMATICO_H
+#include "cEmpleado.h"
+class cAsistenteAutomatico {
 public: 
     
-void AsistenteAutomático();
+cAsistenteAutomatico();
+~cAsistenteAutomatico();
     
 /**
  * @param cCliente
@@ -17,7 +18,6 @@ void AsistenteAutomático();
 void EntregarTicket(cCliente);
 protected: 
     
-void AsistenteAutomatico();
 private: 
     static int clientesAtendidos;
 };

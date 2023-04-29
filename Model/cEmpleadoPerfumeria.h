@@ -6,16 +6,17 @@
 #ifndef _CEMPLEADOPERFUMERIA_H
 #define _CEMPLEADOPERFUMERIA_H
 
-#include "cEpleado.h"
+#include "cEmpleado.h"
 
 
-class cEmpleadoPerfumeria: public cEpleado {
+class cEmpleadoPerfumeria: public cEmpleado {
 public: 
     
 cEmpleadoPerfumeria();
+~cEmpleadoPerfumeria();
 protected: 
     
-cEmpleadoPerfumeria();
+
 };
 
 #endif //_CEMPLEADOPERFUMERIA_H

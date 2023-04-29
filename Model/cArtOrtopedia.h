@@ -18,8 +18,9 @@ public:
  * @param bool ConReceta
  * @param string InstruccionesDeUso
  */
-void artOrtopedia(bool EmpaqueEspecial, bool ConReceta,string InstruccionesDeUso);
-    
+cArtOrtopedia(bool EmpaqueEspecial, bool ConReceta,string InstruccionesDeUso);
+~cArtOrtopedia();
+
 void get_EntregaInstantanea();
     
 /**
@@ -28,7 +29,6 @@ void get_EntregaInstantanea();
 void set_InstruccionesDeUso(string);
 protected: 
     
-void artOrtopedia();
 private: 
     bool EmpaqueEspecial;
     bool ConReceta;

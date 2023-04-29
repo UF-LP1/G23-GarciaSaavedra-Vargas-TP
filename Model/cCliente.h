@@ -32,11 +32,11 @@ void Cliente(string NombreYApellido,const double Dni, bool Receta, eMediosDePago
  */
 void SeleccionarProducto(const double Codigo);
     
-void SeleccionarMedioPago();
+eMediosDePago SeleccionarMedioPago(eMediosDePago);
     
 void Pagar();
     
-eNecesidad get_necesidad();
+void get_necesidad();
     
 /**
  * @param cTicket
