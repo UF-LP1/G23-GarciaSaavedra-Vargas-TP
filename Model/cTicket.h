@@ -20,8 +20,9 @@ public:
  * @param eMediosDePago MetodosDePago
  */
 cTicket(string CodigoTicket, double PrecioFinal, eMediosDePago MetodosDePago);
+cTicket();
 ~cTicket();
-void get_PrecioFinal();
+double get_PrecioFinal();
     
 /**
  * @param cArticulos

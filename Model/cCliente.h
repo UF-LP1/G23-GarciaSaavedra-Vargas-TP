@@ -25,8 +25,8 @@ public:
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
-void Cliente(string NombreYApellido,const double Dni, bool Receta, eMediosDePago MedioDePago,const string Mail,eNecesidad Necesidad,string ProductoAComprar);
-    
+cCliente(cTicket ticket,string NombreYApellido,const double Dni, bool Receta, eMediosDePago MedioDePago,const string Mail,eNecesidad Necesidad,string ProductoAComprar);
+~cCliente();
 /**
  * @param Codigo
  */
@@ -41,11 +41,13 @@ void get_necesidad();
 /**
  * @param cTicket
  */
-void RecibirTicket(cTicket);
-protected: 
-    
+cTicket RecibirTicket();
+
+
+protected:
 void Cliente();
 private: 
+    cTicket ticket;
     bool Receta;
     string NombreYApellido;
     const string Dni;

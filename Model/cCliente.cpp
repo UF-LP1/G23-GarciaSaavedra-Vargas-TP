@@ -19,10 +19,11 @@
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
-void cCliente::Cliente(string NombreYApellido,const double Dni, bool Receta,eMediosDePago MedioDePago, const string Mail, eNecesidad Necesidad, string ProductoAComprar) {
+ cCliente::cCliente(cTicket ticket,string NombreYApellido,const double Dni, bool Receta,eMediosDePago MedioDePago, const string Mail, eNecesidad Necesidad, string ProductoAComprar) {
+ }
 
-}
-
+ cCliente::~cCliente(){
+ }
 /**
  * @param Codigo
  * @return void
@@ -76,8 +77,9 @@ void cCliente::get_necesidad() {
  * @param cTicket
  * @return void
  */
-void cCliente::RecibirTicket(cTicket) {
-    return;
+cTicket cCliente::RecibirTicket() {
+   
+    return ticket;
 }
 
 void cCliente::Cliente() {

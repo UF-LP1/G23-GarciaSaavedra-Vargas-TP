@@ -18,14 +18,17 @@
 cTicket::cTicket(string CodigoTicket, double PrecioFinal, eMediosDePago MetodosDePago)
 {
 }
+cTicket::cTicket()
+{
+}
 cTicket:: ~cTicket()
 {
 }
 /**
  * @return void
  */
-void cTicket::get_PrecioFinal() {
-    return;
+double cTicket::get_PrecioFinal() {
+    return PrecioFinal;
 }
 
 /**
