@@ -19,8 +19,17 @@
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
- cCliente::cCliente(cTicket ticket,string NombreYApellido,const double Dni, bool Receta,eMediosDePago MedioDePago, const string Mail, eNecesidad Necesidad, string ProductoAComprar) {
+ cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago,  string mail, eNecesidad Necesidad, string productoAComprar, double pago):Dni(dni){
+     this->Receta = receta;
+     this->NombreYApellido = nombreYApellido;
+     this-> ProductoAComprar = productoAComprar;
+     this->Pago = pago;
+
  }
+ cCliente::cCliente(double dni):Dni(dni){// NO ENTIENDO QUE PASA CON ESTE CONSTRUCTOR
+     
+ }
+
 
  cCliente::~cCliente(){
  }
@@ -29,13 +38,15 @@
  * @return void
  */
 void cCliente::SeleccionarProducto(const double Codigo) {
+
+
     return;
 }
 
 /**
  * @return void
  */
-eMediosDePago cCliente::SeleccionarMedioPago(eMediosDePago) {
+void cCliente::SeleccionarMedioPago(eMediosDePago) {
     srand(time(nullptr));
     int optionNum = std::rand() % 4;
 
@@ -55,8 +66,7 @@ eMediosDePago cCliente::SeleccionarMedioPago(eMediosDePago) {
         opcionSeleccionada = PagoCelular;
         break;
     }
-    eMediosDePago medioactual = opcionSeleccionada;
-    return opcionSeleccionada;
+    this->ticket.set_MedotoDePago(opcionSeleccionada);
 }
 
 /**
@@ -80,8 +90,4 @@ void cCliente::get_necesidad() {
 cTicket cCliente::RecibirTicket() {
    
     return ticket;
-}
-
-void cCliente::Cliente() {
-
 }

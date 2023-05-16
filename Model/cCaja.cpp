@@ -13,7 +13,9 @@
 /**
  * @param double Saldo
  */
-cCaja::cCaja(double Saldo)
+cCaja::cCaja(double Saldo){
+}
+cCaja::cCaja()
 {
 }
 cCaja::~cCaja(){
@@ -24,15 +26,20 @@ cCaja::~cCaja(){
  * @return double
  */
 double cCaja::Cobrar(cCliente cliente) {
-   //se accede al metodo recibir ticket de cliente, el cual le devuelve el ticket asignado a cliente, de esta manera accedo al precio final de la compra
-    double precioaCobrar = cliente.RecibirTicket().get_PrecioFinal();
-    Saldo = Saldo + precioaCobrar;
-    return Saldo;
+   
+//se accede al metodo recibir ticket de cliente, el cual le devuelve el ticket asignado a cliente, de esta manera accedo al precio final de la compra
+
+   
+   eMediosDePago medioactual;//podria haber un if que evalue que metodo de pago es y asi acceder a esa billetera?
+   cliente.SeleccionarMedioPago(medioactual);// aca obtengo que metodo de pago tiene
+   double precioaCobrar = cliente.RecibirTicket().get_PrecioFinal();
+   Saldo = Saldo + precioaCobrar;
+   return Saldo;
 }
 
 /**
  * @return void
  */
-void cCaja::get_Saldo() {
-    return;
+double cCaja::get_Saldo() {
+    return Saldo;
 }

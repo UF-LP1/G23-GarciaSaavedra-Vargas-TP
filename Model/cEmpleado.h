@@ -5,8 +5,8 @@
 
 #ifndef _CEMPLEADO_H
 #define _CEMPLEADO_H
-#include <iostream>
-#include <string>
+/*#include <iostream>
+#include <string>*/
 #include <time.h>
 using namespace std;
 #include "cCliente.h"
@@ -20,8 +20,9 @@ public:
  * @param const string Dni
  * @param time Horario
  */
-    cEmpleado();
+    
 cEmpleado(string NombreYApellido,const string Dni, time_t Horario);
+cEmpleado();
 ~cEmpleado();
     
 /**
@@ -40,7 +41,7 @@ void DarConsejosYRecomendaciones(cTicket);
  */
 void AplicarDescuento(cTicket);
 protected: 
-      string NombreYApellido;
+    string NombreYApellido;
     const string Dni;
     time_t Horario{};
     

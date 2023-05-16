@@ -1,4 +1,4 @@
-/**
+ /**
  * Project Untitled
  */
 
@@ -15,11 +15,15 @@
  * @param double PrecioFinal
  * @param eMediosDePago MetodosDePago
  */
-cTicket::cTicket(string CodigoTicket, double PrecioFinal, eMediosDePago MetodosDePago)
+cTicket::cTicket(string codigoticket, double PrecioFinal, eMediosDePago MetodosDePago):CodigoTicket(codigoticket)
 {
+    this->PrecioFinal = PrecioFinal;
+    this->MetodoDePago = MetodosDePago;
+
 }
 cTicket::cTicket()
 {
+    this->PrecioFinal = 0;
 }
 cTicket:: ~cTicket()
 {
@@ -27,8 +31,14 @@ cTicket:: ~cTicket()
 /**
  * @return void
  */
-double cTicket::get_PrecioFinal() {
+double cTicket::get_PrecioFinal() 
+{
     return PrecioFinal;
+}
+
+void cTicket::set_MedotoDePago(eMediosDePago medioactual)
+{
+    MetodoDePago = medioactual;
 }
 
 /**

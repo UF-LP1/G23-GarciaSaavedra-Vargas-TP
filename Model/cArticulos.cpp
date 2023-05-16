@@ -10,7 +10,7 @@
  */
 
 
-cArticulos::cArticulos()
+cArticulos::cArticulos(string Articulo, double Precio, const string codigo, double Stock):Codigo(codigo)
 {
 }
 
@@ -20,8 +20,9 @@ cArticulos::cArticulos()
  * @param const string Codigo
  * @param double Stock
  */
-cArticulos::cArticulos(string Articulo, double Precio, const string Codigo, double Stock) {
 
+cArticulos::cArticulos()
+{
 }
 cArticulos::~cArticulos()
 {

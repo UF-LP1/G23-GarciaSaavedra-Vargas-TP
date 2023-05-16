@@ -18,8 +18,16 @@
  * @param bool Estado
  * @param double GananciaTotal
  */
-void cFarmacia::Farmacia(cCaja caja,string Nombre, string Direccion,time_t Horario,const string Telefono,bool Estado,double GananciaTotal) {
+cFarmacia::cFarmacia(cCaja caja, string Nombre, string Direccion, time_t Horario, const string Telefono, bool Estado, double GananciaTotal)
+{
+}
 
+/*cFarmacia::cFarmacia()
+{
+}*/
+
+cFarmacia::~cFarmacia()
+{
 }
 
 /**
@@ -53,9 +61,4 @@ void cFarmacia::RecibirCliente(cCliente,cArticulos) {
 void cFarmacia::Cobrar(cCliente cliente) {
     //se le suma al saldo total de la farmacia lo que se le acaba de cobrar al cliente mediante la caja, a traves del metodo cobrar de la caja
     GananciaTotal = GananciaTotal + caja.Cobrar(cliente);
-    return;
-}
-
-void cFarmacia::Farmacia() {
-
 }

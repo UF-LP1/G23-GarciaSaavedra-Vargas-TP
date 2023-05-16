@@ -5,16 +5,17 @@
 
 #ifndef _CFARMACIA_H
 #define _CFARMACIA_H
-#include <iostream>
-#include <string>
+/*#include <iostream>
+#include <string>*/
 using namespace std;
-#include"cArticulos.h"
+//#include"cArticulos.h"
 #include "cEmpleado.h"
 #include "cCaja.h"
+#include"cAsistenteAutomatico.h"
 
 class cFarmacia {
 public: 
-    double GananciaTotal;
+    
     
 /**
  * @param string Nombre
@@ -24,8 +25,10 @@ public:
  * @param bool Estado
  * @param double GananciaTotal
  */
-void Farmacia(cCaja caja,string Nombre,string Direccion, time_t Horario,const string Telefono,bool Estado,double GananciaTotal);
-    
+cFarmacia(cCaja caja,string Nombre,string Direccion, time_t Horario,const string Telefono,bool Estado,double GananciaTotal);
+//cFarmacia();
+~cFarmacia();
+
 void EstadoFarmacia();
     
 /**
@@ -43,15 +46,15 @@ void RecibirCliente(cCliente,cArticulos);
  * @param cCliente
  */
 void Cobrar(cCliente cliente);
-protected: 
-    cCaja caja;
-void Farmacia();
+
 private: 
+    cCaja caja;//NO ENTIENDO ESTE ERROR - NO ME TOMA CAJA
     string Nombre;
     string Direccion;
     time_t Horario;
     const string Telefono;
     bool Estado;
+    double GananciaTotal;
 };
 
 #endif //_CFARMACIA_H
