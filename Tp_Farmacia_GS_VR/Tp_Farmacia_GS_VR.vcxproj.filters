@@ -15,49 +15,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Model\cArtGolosina.cpp">
+    <ClCompile Include="cArtGolosina.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cArticulos.cpp">
+    <ClCompile Include="cArticulos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cArtMedicamento.cpp">
+    <ClCompile Include="cArtMedicamento.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cArtOrtopedia.cpp">
+    <ClCompile Include="cArtOrtopedia.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cArtPerfumería.cpp">
+    <ClCompile Include="cArtPerfumería.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cAsistenteAutomático.cpp">
+    <ClCompile Include="cAsistenteAutomático.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cCaja.cpp">
+    <ClCompile Include="cCaja.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cCliente.cpp">
+    <ClCompile Include="cCarrito.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cEmpleadoFarmaceutico.cpp">
+    <ClCompile Include="cEmpleado.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cEmpleadoOrtopedia.cpp">
+    <ClCompile Include="cEmpleadoFarmaceutico.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cEmpleadoPerfumeria.cpp">
+    <ClCompile Include="cEmpleadoLimpieza.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cEmpleado.cpp">
+    <ClCompile Include="cEmpleadoOrtopedia.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cFarmacia.cpp">
+    <ClCompile Include="cEmpleadoPerfumeria.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cTicket.cpp">
+    <ClCompile Include="cFarmacia.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Model\cEmpleadoLimpieza.cpp">
+    <ClCompile Include="cTicket.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
@@ -65,67 +65,67 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Model\cArtGolosina.h">
+    <ClInclude Include="cArtGolosina.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cArticulos.h">
+    <ClInclude Include="cArticulos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cArtMedicamento.h">
+    <ClInclude Include="cArtMedicamento.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cArtOrtopedia.h">
+    <ClInclude Include="cArtOrtopedia.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cArtPerfumeria.h">
+    <ClInclude Include="cArtPerfumeria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cAsistenteAutomatico.h">
+    <ClInclude Include="cAsistenteAutomatico.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cCaja.h">
+    <ClInclude Include="cCaja.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cCliente.h">
+    <ClInclude Include="cCarrito.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cEmpleadoFarmaceutico.h">
+    <ClInclude Include="cCliente.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cEmpleadoOrtopedia.h">
+    <ClInclude Include="cEmpleado.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cEmpleadoPerfumeria.h">
+    <ClInclude Include="cEmpleadoFarmaceutico.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cEmpleado.h">
+    <ClInclude Include="cEmpleadoLimpieza.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cFarmacia.h">
+    <ClInclude Include="cEmpleadoOrtopedia.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cTicket.h">
+    <ClInclude Include="cEmpleadoPerfumeria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\eMedicamentos.h">
+    <ClInclude Include="cFarmacia.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\eMediosDePago.h">
+    <ClInclude Include="cTicket.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\cEmpleadoLimpieza.h">
+    <ClInclude Include="eMedicamentos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\eNecesidad.h">
+    <ClInclude Include="eMediosDePago.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\eOrtopedia.h">
+    <ClInclude Include="eNecesidad.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Model\ePerfumeria.h">
+    <ClInclude Include="eOrtopedia.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Main.h">
+    <ClInclude Include="ePerfumeria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

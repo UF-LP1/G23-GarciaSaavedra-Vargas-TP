@@ -18,8 +18,10 @@ public:
      * @param const string Codigo
      * @param double Stock
      */
+    
+
+    cArticulos(string Articulo, double Precio, const string codigo, double Stock);
     cArticulos();
-    cArticulos(string Articulo, double Precio, const string Codigo, double Stock);
     ~cArticulos();
     void get_Articulo();
 

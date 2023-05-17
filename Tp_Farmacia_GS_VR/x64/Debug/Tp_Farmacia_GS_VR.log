@@ -1,13 +1,28 @@
-﻿  cAsistenteAutomático.cpp
+﻿  cArtGolosina.cpp
+  cArticulos.cpp
+  cArtMedicamento.cpp
+  cArtOrtopedia.cpp
+  cArtPerfumería.cpp
+  cAsistenteAutomático.cpp
   cCaja.cpp
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cFarmacia.h(28,11): error C2061: error de sintaxis: identificador 'cCaja'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cFarmacia.h(51,11): error C3646: 'caja': especificador de invalidación desconocido
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cFarmacia.h(51,15): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  cCarrito.cpp
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cCarrito.h(33,24): error C2059: error de sintaxis: '='
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cCarrito.h(33,26): error C2238: símbolos (token) inesperados delante de ';'
   cCliente.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cCliente.cpp(38,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cCliente.cpp(29,12): error C2511: 'cCliente::cCliente(double)': la función miembro sobrecargada no se ha encontrado en 'cCliente'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cCliente.h(15): message : vea la declaración de 'cCliente'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cCliente.cpp(29,41): error C2550: 'cCliente::{ctor}': las listas de inicializadores de constructor solo se permiten en las definiciones de constructor
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Model\cCliente.cpp(50,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   cEmpleadoFarmaceutico.cpp
   cEmpleadoOrtopedia.cpp
   cEmpleadoPerfumeria.cpp
   cEmpleado.cpp
   cFarmacia.cpp
+  cTicket.cpp
   cEmpleadoLimpieza.cpp
   Main.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(17,101): error C2661: 'cCliente::cCliente': ninguna función sobrecargada acepta 8 argumentos
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(7,111): error C2661: 'cCliente::cCliente': ninguna función sobrecargada acepta 9 argumentos
   Generando código...

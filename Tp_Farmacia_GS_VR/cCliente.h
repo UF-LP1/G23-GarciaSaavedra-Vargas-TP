@@ -5,8 +5,8 @@
 
 #ifndef _CCLIENTE_H
 #define _CCLIENTE_H
-#include <iostream>
-#include <string>
+/*#include <iostream>
+#include <string>*/
 using namespace std;
 #include "eMediosDePago.h"
 #include "eNecesidad.h"
@@ -14,7 +14,7 @@ using namespace std;
 
 class cCliente {
 public: 
-    bool EstadoDeAtencion;
+    
 
 /**
  * @param string NombreYApellido
@@ -25,14 +25,17 @@ public:
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
-void Cliente(string NombreYApellido,const double Dni, bool Receta, eMediosDePago MedioDePago,const string Mail,eNecesidad Necesidad,string ProductoAComprar);
-    
+   
+cCliente(cTicket ticket,string nombreYApellido,const double dni, bool receta, eMediosDePago MedioDePago, string mail,eNecesidad Necesidad,string productoAComprar, double pago);
+cCliente();
+~cCliente();
+
 /**
  * @param Codigo
  */
 void SeleccionarProducto(const double Codigo);
     
-eMediosDePago SeleccionarMedioPago(eMediosDePago);
+void SeleccionarMedioPago(eMediosDePago);
     
 void Pagar();
     
@@ -41,16 +44,19 @@ void get_necesidad();
 /**
  * @param cTicket
  */
-void RecibirTicket(cTicket);
-protected: 
-    
-void Cliente();
+cTicket RecibirTicket();
+
+
+protected:
 private: 
+    cTicket ticket;
     bool Receta;
     string NombreYApellido;
-    const string Dni;
-    const string Mail;
+    string ProductoAComprar;
+    const double Dni;
+    string Mail;
     eNecesidad Necesidad;
+    double Pago;
 };
 
 #endif //_CCLIENTE_H

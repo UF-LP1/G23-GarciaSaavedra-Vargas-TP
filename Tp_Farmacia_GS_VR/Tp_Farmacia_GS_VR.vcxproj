@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -17,6 +17,47 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cArtGolosina.cpp" />
+    <ClCompile Include="cArticulos.cpp" />
+    <ClCompile Include="cArtMedicamento.cpp" />
+    <ClCompile Include="cArtOrtopedia.cpp" />
+    <ClCompile Include="cArtPerfumería.cpp" />
+    <ClCompile Include="cAsistenteAutomático.cpp" />
+    <ClCompile Include="cCaja.cpp" />
+    <ClCompile Include="cCarrito.cpp" />
+    <ClCompile Include="cEmpleado.cpp" />
+    <ClCompile Include="cEmpleadoFarmaceutico.cpp" />
+    <ClCompile Include="cEmpleadoLimpieza.cpp" />
+    <ClCompile Include="cEmpleadoOrtopedia.cpp" />
+    <ClCompile Include="cEmpleadoPerfumeria.cpp" />
+    <ClCompile Include="cFarmacia.cpp" />
+    <ClCompile Include="cTicket.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cArtGolosina.h" />
+    <ClInclude Include="cArticulos.h" />
+    <ClInclude Include="cArtMedicamento.h" />
+    <ClInclude Include="cArtOrtopedia.h" />
+    <ClInclude Include="cArtPerfumeria.h" />
+    <ClInclude Include="cAsistenteAutomatico.h" />
+    <ClInclude Include="cCaja.h" />
+    <ClInclude Include="cCarrito.h" />
+    <ClInclude Include="cCliente.h" />
+    <ClInclude Include="cEmpleado.h" />
+    <ClInclude Include="cEmpleadoFarmaceutico.h" />
+    <ClInclude Include="cEmpleadoLimpieza.h" />
+    <ClInclude Include="cEmpleadoOrtopedia.h" />
+    <ClInclude Include="cEmpleadoPerfumeria.h" />
+    <ClInclude Include="cFarmacia.h" />
+    <ClInclude Include="cTicket.h" />
+    <ClInclude Include="eMedicamentos.h" />
+    <ClInclude Include="eMediosDePago.h" />
+    <ClInclude Include="eNecesidad.h" />
+    <ClInclude Include="eOrtopedia.h" />
+    <ClInclude Include="ePerfumeria.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -126,47 +167,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\Model\cArtGolosina.cpp" />
-    <ClCompile Include="..\Model\cArticulos.cpp" />
-    <ClCompile Include="..\Model\cArtMedicamento.cpp" />
-    <ClCompile Include="..\Model\cArtOrtopedia.cpp" />
-    <ClCompile Include="..\Model\cArtPerfumería.cpp" />
-    <ClCompile Include="..\Model\cAsistenteAutomático.cpp" />
-    <ClCompile Include="..\Model\cCaja.cpp" />
-    <ClCompile Include="..\Model\cCliente.cpp" />
-    <ClCompile Include="..\Model\cEmpleadoFarmaceutico.cpp" />
-    <ClCompile Include="..\Model\cEmpleadoOrtopedia.cpp" />
-    <ClCompile Include="..\Model\cEmpleadoPerfumeria.cpp" />
-    <ClCompile Include="..\Model\cEmpleado.cpp" />
-    <ClCompile Include="..\Model\cFarmacia.cpp" />
-    <ClCompile Include="..\Model\cTicket.cpp" />
-    <ClCompile Include="..\Model\cEmpleadoLimpieza.cpp" />
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\Model\cArtGolosina.h" />
-    <ClInclude Include="..\Model\cArticulos.h" />
-    <ClInclude Include="..\Model\cArtMedicamento.h" />
-    <ClInclude Include="..\Model\cArtOrtopedia.h" />
-    <ClInclude Include="..\Model\cArtPerfumeria.h" />
-    <ClInclude Include="..\Model\cAsistenteAutomatico.h" />
-    <ClInclude Include="..\Model\cCaja.h" />
-    <ClInclude Include="..\Model\cCliente.h" />
-    <ClInclude Include="..\Model\cEmpleadoFarmaceutico.h" />
-    <ClInclude Include="..\Model\cEmpleadoOrtopedia.h" />
-    <ClInclude Include="..\Model\cEmpleadoPerfumeria.h" />
-    <ClInclude Include="..\Model\cEmpleado.h" />
-    <ClInclude Include="..\Model\cFarmacia.h" />
-    <ClInclude Include="..\Model\cTicket.h" />
-    <ClInclude Include="..\Model\eMedicamentos.h" />
-    <ClInclude Include="..\Model\eMediosDePago.h" />
-    <ClInclude Include="..\Model\cEmpleadoLimpieza.h" />
-    <ClInclude Include="..\Model\eNecesidad.h" />
-    <ClInclude Include="..\Model\eOrtopedia.h" />
-    <ClInclude Include="..\Model\ePerfumeria.h" />
-    <ClInclude Include="Main.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
