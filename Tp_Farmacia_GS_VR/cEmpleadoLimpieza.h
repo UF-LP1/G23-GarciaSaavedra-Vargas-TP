@@ -21,10 +21,10 @@ public:
  * @param Dni
  * @param Horario
  */
-cEmpleadoLimpieza( const string NombreYAppelido, const string Dni, time_t Horario);
-    
-void LimpiarYOrdenar();    
+cEmpleadoLimpieza(const string NombreYAppelido, const string Dni, time_t Horario);
 ~cEmpleadoLimpieza();
+void LimpiarYOrdenar();    
+
 private: 
     string ProductosLimpieza;
 };

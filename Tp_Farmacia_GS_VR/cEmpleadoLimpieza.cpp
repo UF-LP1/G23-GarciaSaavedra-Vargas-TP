@@ -17,7 +17,8 @@
  */
 
 cEmpleadoLimpieza::cEmpleadoLimpieza(const string NombreYAppelido, const string Dni, time_t Horario)
-{
+:cEmpleado(NombreYApellido, Dni, Horario){
+    
 }
 cEmpleadoLimpieza::~cEmpleadoLimpieza()
 {

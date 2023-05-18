@@ -10,7 +10,7 @@
 #include "cFarmacia.h"
 class cCaja {
 public: 
-    
+
 /**
  * @param double Saldo
  */

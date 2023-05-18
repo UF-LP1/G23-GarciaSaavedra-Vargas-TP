@@ -16,13 +16,14 @@ public:
     /**
      * @param double Saldo
      */
-    cCarrito(const string idcarrito, int contproductos, double preciototal);
+    cCarrito(const string idcarrito, int contproductos, double preciototal, vector<cArticulos> articulos);
     cCarrito();
     ~cCarrito();
     /**
      * @param cCliente
      */
-    void AgregarProducto(cArticulos);
+    //HACER UN SET Y UN GET PARA PODER MODIFICAR EL VECTOR DE ARTICULOS DESDE EMPLEADO
+
 
 private:
     const string Idcarrito;

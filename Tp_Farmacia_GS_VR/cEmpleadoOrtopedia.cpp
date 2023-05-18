@@ -10,7 +10,10 @@
  */
 
 
-cEmpleadoOrtopedia::cEmpleadoOrtopedia() {
+cEmpleadoOrtopedia::cEmpleadoOrtopedia() 
+	:cEmpleado(NombreYApellido, Dni, Horario){
+
+	
 
 }
 

@@ -10,7 +10,8 @@
  */
 
 
-cEmpleadoPerfumeria::cEmpleadoPerfumeria() {
+cEmpleadoPerfumeria::cEmpleadoPerfumeria() 
+	:cEmpleado(NombreYApellido, Dni, Horario) {
 
 }
 

@@ -16,6 +16,7 @@ cAsistenteAutomatico();
  * @param cCliente
  */
 void EntregarTicket(cCliente);
+void AsignarEmpleado(cCliente cliente);
 protected: 
     
 private: 

@@ -15,15 +15,16 @@
  * @param double PrecioFinal
  * @param eMediosDePago MetodosDePago
  */
-cTicket::cTicket(string codigoticket, double PrecioFinal, eMediosDePago MetodosDePago):CodigoTicket(codigoticket)
+cTicket::cTicket(string codigoticket, double PrecioFinal, eMediosDePago metodosdepago):CodigoTicket(codigoticket)
 {
     this->PrecioFinal = PrecioFinal;
-    this->MetodoDePago = MetodosDePago;
+    this->MetodoDePago = metodosdepago;
 
 }
 cTicket::cTicket()
 {
     this->PrecioFinal = 0;
+    this->MetodoDePago = Debito;
 }
 cTicket:: ~cTicket()
 {
@@ -38,7 +39,11 @@ double cTicket::get_PrecioFinal()
 
 void cTicket::set_MedotoDePago(eMediosDePago medioactual)
 {
-    MetodoDePago = medioactual;
+    this->MetodoDePago = medioactual;
+}
+void cTicket:: set_preciof(double preciofinal)
+{
+    this->PrecioFinal = preciofinal;
 }
 
 /**
@@ -48,4 +53,3 @@ void cTicket::set_MedotoDePago(eMediosDePago medioactual)
 void cTicket::AgregarProducto(cArticulos) {
     return;
 }
-

@@ -15,7 +15,8 @@
  * @param string Promocion
  */
 
-cArtGolosina::cArtGolosina(string Promocion) {
+cArtGolosina::cArtGolosina(string Promocion)
+    :cArticulos(Articulo, Precio, Codigo, Stock) {
 
 }
 cArtGolosina::~cArtGolosina() {

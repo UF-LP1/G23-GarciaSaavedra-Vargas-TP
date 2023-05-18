@@ -8,6 +8,7 @@
 /*#include <iostream>
 #include <string>*/
 #include <time.h>
+#include <vector>
 using namespace std;
 #include "cCliente.h"
 
@@ -29,22 +30,23 @@ cEmpleado();
  * @param cCliente
  * @param cArticulos
  */
-void AtenderCliente(cCliente,cArticulos);
+void AtenderCliente(cCliente);
+void AgregarACarrito(cArticulos articulo);
     
 /**
  * @param cTicket
  */
-void DarConsejosYRecomendaciones(cTicket);
     
 /**
  * @param cTicket
  */
-void AplicarDescuento(cTicket);
+
 protected: 
     string NombreYApellido;
     const string Dni;
     time_t Horario{};
-    
+    vector<cCliente> listaclientes;
+
 };
 
 #endif //_CEMPLEADO_H

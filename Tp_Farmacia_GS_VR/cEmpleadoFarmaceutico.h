@@ -15,14 +15,16 @@ public:
 /**
  * @param const string Matricula
  */
-cEmpleadoFarmaceutico(const string Matricula);
-    
-void AplicarDescuento();
-protected: 
-    
+cEmpleadoFarmaceutico(string matricula);
 cEmpleadoFarmaceutico();
+~cEmpleadoFarmaceutico();
+    
+void AplicarDescuento(cTicket ticket1, cCliente cliente1);
+void AgregarACarrito();
+
+
 private: 
-    const string Matricula;
+    string Matricula;
 };
 
 #endif //_CEMPLEADOFARMACEUTICO_H

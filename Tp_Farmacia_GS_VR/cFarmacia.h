@@ -11,7 +11,8 @@ using namespace std;
 //#include"cArticulos.h"
 #include "cEmpleado.h"
 #include "cCaja.h"
-#include"cAsistenteAutomatico.h"
+#include "cAsistenteAutomatico.h"
+#include "cArticulos.h"
 
 class cFarmacia {
 public: 
@@ -25,7 +26,7 @@ public:
  * @param bool Estado
  * @param double GananciaTotal
  */
-cFarmacia(cCaja caja,string Nombre,string Direccion, time_t Horario,const string Telefono,bool Estado,double GananciaTotal);
+cFarmacia(cCaja caja,string Nombre,string Direccion, time_t horario,const string Telefono,bool estado,double gananciatotal);
 //cFarmacia();
 ~cFarmacia();
 

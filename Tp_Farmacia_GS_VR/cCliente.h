@@ -26,7 +26,7 @@ public:
  * @param string ProductoAComprar
  */
    
-cCliente(cTicket ticket,string nombreYApellido,const double dni, bool receta, eMediosDePago MedioDePago, string mail,eNecesidad Necesidad,string productoAComprar, double pago);
+cCliente(cTicket ticket,string nombreYApellido,const double dni, bool receta, eMediosDePago MedioDePago, string mail,eNecesidad Necesidad,string productoAComprar, double billetera);
 cCliente();
 ~cCliente();
 
@@ -36,10 +36,10 @@ cCliente();
 void SeleccionarProducto(const double Codigo);
     
 void SeleccionarMedioPago(eMediosDePago);
-    
-void Pagar();
-    
-void get_necesidad();
+double get_Billetera();
+void set_Billetera(double billetera);
+        
+eNecesidad get_necesidad();
     
 /**
  * @param cTicket
@@ -56,7 +56,7 @@ private:
     const double Dni;
     string Mail;
     eNecesidad Necesidad;
-    double Pago;
+    double Billetera;
 };
-
+    
 #endif //_CCLIENTE_H

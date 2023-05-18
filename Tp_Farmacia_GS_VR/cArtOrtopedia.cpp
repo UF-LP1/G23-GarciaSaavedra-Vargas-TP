@@ -17,7 +17,7 @@
  */
 
 cArtOrtopedia::cArtOrtopedia(bool EmpaqueEspecial, bool ConReceta, string InstruccionesDeUso)
-{
+    :cArticulos(Articulo, Precio, Codigo, Stock) {
 
 }
 

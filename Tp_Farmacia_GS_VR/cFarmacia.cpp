@@ -9,7 +9,6 @@
  * cFarmacia implementation
  */
 
-
 /**
  * @param string Nombre
  * @param string Direccion
@@ -18,8 +17,11 @@
  * @param bool Estado
  * @param double GananciaTotal
  */
-cFarmacia::cFarmacia(cCaja caja, string Nombre, string Direccion, time_t Horario, const string Telefono, bool Estado, double GananciaTotal)
+cFarmacia::cFarmacia(cCaja caja, string Nombre, string Direccion, time_t horario, const string Telefono, bool estado, double gananciatotal)
 {
+    this->Estado = estado;
+    this->Horario = horario;
+    this->GananciaTotal = gananciatotal;
 }
 
 /*cFarmacia::cFarmacia()

@@ -27,6 +27,7 @@
     <ClCompile Include="cAsistenteAutomático.cpp" />
     <ClCompile Include="cCaja.cpp" />
     <ClCompile Include="cCarrito.cpp" />
+    <ClCompile Include="cCliente.cpp" />
     <ClCompile Include="cEmpleado.cpp" />
     <ClCompile Include="cEmpleadoFarmaceutico.cpp" />
     <ClCompile Include="cEmpleadoLimpieza.cpp" />

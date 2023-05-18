@@ -19,16 +19,21 @@
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
- cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago,  string mail, eNecesidad Necesidad, string productoAComprar, double pago):Dni(dni){
+ cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago,  string mail, eNecesidad Necesidad, string productoAComprar, double billetera):Dni(dni){
      this->Receta = receta;
      this->NombreYApellido = nombreYApellido;
      this-> ProductoAComprar = productoAComprar;
-     this->Pago = pago;
+     this->Billetera = billetera;
 
  }
- cCliente::cCliente(double dni):Dni(dni){// NO ENTIENDO QUE PASA CON ESTE CONSTRUCTOR
-     
+ cCliente::cCliente():Dni(0) {
+     this->Receta = {};
+     this->Billetera = 0;
+     this->Necesidad = Pami;
  }
+/* cCliente::cCliente(double dni):Dni(dni){// NO ENTIENDO QUE PASA CON ESTE CONSTRUCTOR
+     
+ }*/
 
 
  cCliente::~cCliente(){
@@ -72,16 +77,22 @@ void cCliente::SeleccionarMedioPago(eMediosDePago) {
 /**
  * @return void
  */
-void cCliente::Pagar() {
-    return;
-}
 
 /**
  * @return eNecesidad
  */
-void cCliente::get_necesidad() {
-    return;
+eNecesidad cCliente::get_necesidad() {
+    return Necesidad;
 }
+double cCliente::get_Billetera() {
+
+    return Billetera;
+}
+void cCliente::set_Billetera(double billetera) {
+    
+    this->Billetera = billetera;
+}
+
 
 /**
  * @param cTicket

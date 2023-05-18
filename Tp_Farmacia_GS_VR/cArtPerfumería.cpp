@@ -15,7 +15,8 @@
  * @param bool Importado
  * @param ePerfumeria Productos
  */
-cArtPerfumeria::cArtPerfumeria(string Origen,bool Importado, ePerfumeria Productos) {
+cArtPerfumeria::cArtPerfumeria(string Origen,bool Importado, ePerfumeria Productos) 
+    :cArticulos(Articulo,Precio, Codigo, Stock){
 
 }
 
