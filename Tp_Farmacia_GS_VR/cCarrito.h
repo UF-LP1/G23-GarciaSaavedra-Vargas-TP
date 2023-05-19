@@ -3,12 +3,10 @@
  * Project Untitled
  */
 
-
 #ifndef _CCARRITO_H
 #define _CCARRITO_H
-
-#include "cCliente.h"
 #include <vector>
+#include "cArticulos.h"
 
 class cCarrito {
 public:

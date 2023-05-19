@@ -17,11 +17,12 @@
  * @param bool Estado
  * @param double GananciaTotal
  */
-cFarmacia::cFarmacia(cCaja caja, string Nombre, string Direccion, time_t horario, const string Telefono, bool estado, double gananciatotal)
+cFarmacia::cFarmacia(cCaja caja, string Nombre, string Direccion, time_t horario, string telefono, bool estado, double gananciatotal,cAsistenteAutomatico asistente):Telefono(telefono)
 {
     this->Estado = estado;
     this->Horario = horario;
     this->GananciaTotal = gananciatotal;
+    this->Caja = caja;
 }
 
 /*cFarmacia::cFarmacia()
@@ -53,6 +54,10 @@ void cFarmacia::ChequearStock(cArticulos) {
  * @return void
  */
 void cFarmacia::RecibirCliente(cCliente,cArticulos) {
+
+    //recibir el enum de medios de pago del asistente automatico y desarrollar este metodo asignandole a los empleados
+
+
     return;
 }
 
@@ -60,7 +65,7 @@ void cFarmacia::RecibirCliente(cCliente,cArticulos) {
  * @param cCliente
  * @return void
  */
-void cFarmacia::Cobrar(cCliente cliente) {
+void cFarmacia::Ganancia(cCaja caja) {
     //se le suma al saldo total de la farmacia lo que se le acaba de cobrar al cliente mediante la caja, a traves del metodo cobrar de la caja
-    GananciaTotal = GananciaTotal + caja.Cobrar(cliente);
+    GananciaTotal = GananciaTotal + caja.get_Saldo();
 }

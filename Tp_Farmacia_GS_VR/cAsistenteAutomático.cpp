@@ -28,7 +28,7 @@ void cAsistenteAutomatico::RecibirCliente(cCliente clienteentrante)
     this->nuevosclientes.push(clienteentrante);
 }
 
-cCliente  cAsistenteAutomatico::AsignarEmpleado() {
+void cAsistenteAutomatico::AsignarEmpleado() {
     cCliente clienteentrante;
     if (clienteentrante.get_necesidad() == ObraSocial || Particular || Pami) {
     

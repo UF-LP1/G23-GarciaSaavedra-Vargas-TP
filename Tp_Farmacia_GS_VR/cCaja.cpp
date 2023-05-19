@@ -12,10 +12,12 @@
 /**
  * @param double Saldo
  */
-cCaja::cCaja(double Saldo){
+cCaja::cCaja(double saldo){
+    this->Saldo = saldo;
 }
 cCaja::cCaja()
 {
+    this->Saldo = 0;
 }
 cCaja::~cCaja(){
 }
@@ -32,11 +34,10 @@ double cCaja::Cobrar(cCliente cliente) {
    Saldo = Saldo + precioaCobrar;
 
    double DineroCliente = cliente.get_Billetera();
-   DineroCliente -= precioaCobrar;
+   DineroCliente = DineroCliente - precioaCobrar;
    cliente.set_Billetera(DineroCliente);
 
-   eMediosDePago medioactual;
-   cliente.SeleccionarMedioPago(medioactual);// aca obtengo que metodo de pago tiene
+   cliente.SeleccionarMedioPago();// aca obtengo que metodo de pago tiene
    //¿DIFERENTES BILLETERAS PARA CADA METODO?
    //podria haber un if que evalue que metodo de pago es y asi acceder a esa billetera?
    
@@ -47,5 +48,6 @@ double cCaja::Cobrar(cCliente cliente) {
  * @return void
  */
 double cCaja::get_Saldo() {
+
     return Saldo;
 }

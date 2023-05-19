@@ -20,7 +20,7 @@ public:
      */
     
 
-    cArticulos(string Articulo, double Precio, const string codigo, double Stock);
+    cArticulos(string nombrearticulo, double Precio, const string codigo, double Stock);
     cArticulos();
     ~cArticulos();
     void get_Articulo();
@@ -38,7 +38,7 @@ public:
     void get_codigo();
   
 protected:
-    string Articulo;
+    string NombreArticulo;
     double Precio{};
     const string Codigo;
     double Stock{};

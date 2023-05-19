@@ -16,8 +16,8 @@
  * @param string InstruccionesDeUso
  */
 
-cArtOrtopedia::cArtOrtopedia(bool EmpaqueEspecial, bool ConReceta, string InstruccionesDeUso)
-    :cArticulos(Articulo, Precio, Codigo, Stock) {
+cArtOrtopedia::cArtOrtopedia(bool EmpaqueEspecial, bool ConReceta, string InstruccionesDeUso,eOrtopedia productos)
+    :cArticulos(articulo, Precio, Codigo, Stock) {
 
 }
 

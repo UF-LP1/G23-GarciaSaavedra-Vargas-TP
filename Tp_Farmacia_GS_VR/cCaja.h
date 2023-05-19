@@ -7,14 +7,15 @@
 #define _CCAJA_H
 //¿porque caja tendria que incluir a cliente si ya esta conectado por la farmacia?
 //#include "cCliente.h"
-#include "cFarmacia.h"
+#include "cCliente.h"
+
 class cCaja {
 public: 
 
 /**
  * @param double Saldo
  */
-cCaja(double Saldo);
+cCaja(double saldo);
 cCaja();
 ~cCaja();
 /**

@@ -8,9 +8,7 @@
 
 #include "cArticulos.h"
 #include "eMedicamentos.h"
-#include <iostream>
-#include <string>
-using namespace std;
+
 class cArtMedicamento: public cArticulos {
 public: 
     
@@ -20,13 +18,12 @@ public:
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-cArtMedicamento(string Dosis,string IndicacionesEspeciales,eMedicamentos Productos);
+cArtMedicamento(string Articulos, double Precio, const string codigo, double Stock,string Dosis,string IndicacionesEspeciales,eMedicamentos productos);
 ~cArtMedicamento(); 
 void get_Dosis();
       
 private: 
     string Dosis;
-    bool VentaLibre;
     string IndicacionesEspeciales;
     eMedicamentos Productos;
 };

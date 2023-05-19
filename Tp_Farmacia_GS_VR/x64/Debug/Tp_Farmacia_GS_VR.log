@@ -1,21 +1,5 @@
-﻿  cAsistenteAutomático.cpp
-  cCaja.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cFarmacia.h(29,11): error C2061: error de sintaxis: identificador 'cCaja'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cFarmacia.h(52,11): error C3646: 'caja': especificador de invalidación desconocido
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cFarmacia.h(52,15): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  cCarrito.cpp
-  cEmpleado.cpp
-  cEmpleadoFarmaceutico.cpp
-  cEmpleadoLimpieza.cpp
-  cEmpleadoOrtopedia.cpp
-  cEmpleadoPerfumeria.cpp
+﻿  cCaja.cpp
   cFarmacia.cpp
   Main.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(8,112): error C2665: 'cCliente::cCliente': ninguna de las 3 sobrecargas pudo convertir todos los tipos de argumento
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.h(29,1): message : puede ser 'cCliente::cCliente(cTicket,std::string,const double,bool,eMediosDePago,std::string,eNecesidad,std::string,double)'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(8,20): message : 'cCliente::cCliente(cTicket,std::string,const double,bool,eMediosDePago,std::string,eNecesidad,std::string,double)': el argumento 1 no puede convertirse de 'cTicket (__cdecl *)(void)' a 'cTicket'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(8,112): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.h(29,1): message : vea la declaración de 'cCliente::cCliente'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(8,112): message : al hacer coincidir la lista de argumentos '(overloaded-function, const char [5], const char [9], bool, eMediosDePago, const char [14], eNecesidad, const char [10], int)'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(9,112): error C2661: 'cCliente::cCliente': ninguna función sobrecargada acepta 9 argumentos
   Generando código...
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cAsistenteAutomático.cpp(44): error C4716: 'cAsistenteAutomatico::AsignarEmpleado': debe devolver un valor

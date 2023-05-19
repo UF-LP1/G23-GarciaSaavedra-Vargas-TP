@@ -18,7 +18,7 @@ cAsistenteAutomatico();
  */
 void EntregarTicket(cCliente);
 void RecibirCliente(cCliente);
-cCliente AsignarEmpleado();
+void AsignarEmpleado();
 protected: 
     
 private: 

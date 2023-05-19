@@ -2,23 +2,20 @@
  * Project Untitled
  */
 
-
 #include "cArtMedicamento.h"
 
 /**
  * cArtMedicamento implementation
  */
-
-
 /**
  * @param string Dosis
  * @param bool VentaLibre
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-cArtMedicamento::cArtMedicamento(string Dosis,string IndicacionesEspeciales, eMedicamentos Productos)
-    :cArticulos(Articulo, Precio, Codigo, Stock) {
-
+cArtMedicamento::cArtMedicamento(string NombreArticulos, double Precio, const string codigo, double Stock,string Dosis, string IndicacionesEspeciales, eMedicamentos productos)
+    :cArticulos(NombreArticulo, Precio, Codigo, Stock) {
+    this->Productos = productos;
 }
 
 cArtMedicamento::~cArtMedicamento()

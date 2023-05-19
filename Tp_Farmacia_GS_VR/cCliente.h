@@ -13,6 +13,7 @@ using namespace std;
 #include "cTicket.h"
 #include "cCarrito.h"
 
+
 class cCliente {
 public: 
     
@@ -27,7 +28,7 @@ public:
  * @param string ProductoAComprar
  */
    
-cCliente(cTicket ticket,string nombreYApellido,const double dni, bool receta, eMediosDePago MedioDePago, string mail,eNecesidad Necesidad,string productoAComprar, double billetera,cCarrito carrito);
+cCliente(cTicket ticket,string nombreYApellido,const double dni, bool receta, eMediosDePago mediodepago, string mail,eNecesidad Necesidad,string productoAComprar, double billetera,cCarrito carrito);
 cCliente();
 ~cCliente();
 
@@ -35,7 +36,7 @@ cCliente();
  * @param Codigo
  */
 void SeleccionarProducto(const double Codigo,cArticulos articulos,cCarrito carrito);
-void SeleccionarMedioPago(eMediosDePago);
+void SeleccionarMedioPago();
 double get_Billetera(); 
 void set_Billetera(double billetera);
 eNecesidad get_necesidad();
@@ -47,10 +48,11 @@ private:
     cTicket ticket;
     bool Receta;
     string NombreYApellido;
-    string ProductoAComprar;
+    vector<cArticulos> ProductoAComprar;
     const double Dni;
     string Mail;
     eNecesidad Necesidad;
+    eMediosDePago MediosDePago;
     double Billetera;
     cCarrito Carrito;
 };

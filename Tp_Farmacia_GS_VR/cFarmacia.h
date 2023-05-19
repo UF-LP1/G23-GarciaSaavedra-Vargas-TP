@@ -26,7 +26,7 @@ public:
  * @param bool Estado
  * @param double GananciaTotal
  */
-cFarmacia(cCaja caja,string Nombre,string Direccion, time_t horario,const string Telefono,bool estado,double gananciatotal);
+cFarmacia(cCaja caja,string Nombre,string Direccion, time_t horario,const string telefono,bool estado,double gananciatotal,cAsistenteAutomatico asistente);
 //cFarmacia();
 ~cFarmacia();
 
@@ -46,16 +46,17 @@ void RecibirCliente(cCliente,cArticulos);
 /**
  * @param cCliente
  */
-void Cobrar(cCliente cliente);
+void Ganancia(cCaja caja);
 
 private: 
-    cCaja caja;//NO ENTIENDO ESTE ERROR - NO ME TOMA CAJA
+    cCaja Caja;
     string Nombre;
     string Direccion;
     time_t Horario;
     const string Telefono;
     bool Estado;
     double GananciaTotal;
+    cAsistenteAutomatico Asistente;
 };
 
 #endif //_CFARMACIA_H

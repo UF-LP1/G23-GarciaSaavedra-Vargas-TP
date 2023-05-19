@@ -10,8 +10,10 @@
  */
 
 
-cArticulos::cArticulos(string Articulo, double Precio, const string codigo, double Stock):Codigo(codigo)
+cArticulos::cArticulos(string nombrearticulo, double Precio, const string codigo, double Stock):Codigo(codigo)
 {
+    this->NombreArticulo = nombrearticulo;
+
 }
 
 /**

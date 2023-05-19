@@ -34,8 +34,7 @@ void cEmpleado::AtenderCliente(cCliente cliente) {
 }
 void cEmpleado::AgregarACarrito(cArticulos articulo) {
     cCliente cliente;
-    cliente.
-    
+        
     //ACA AGREGO LOS ARTICULOS A LA LISTA QUE ESTA DENTRO DE CARRITO, A TRAVES DE UN SET Y UN GET
 }
 

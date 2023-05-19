@@ -4,6 +4,7 @@ cCarrito::cCarrito(const string idcarrito, int contproductos, double preciototal
 {
 	this->Contproductos = contproductos;
 	this->Preciototal = preciototal;
+	this->Articulos = articulos;
 
 }
 
@@ -15,13 +16,16 @@ cCarrito::cCarrito()
 
 cCarrito::~cCarrito()
 {
+// hacer los delete de los vectores
 }
 
 vector<cArticulos> cCarrito::get_VectorArticulos() {
 
 	return Articulos;
 }
+
 void cCarrito::set_articulos(cArticulos articulos1) {
 
 	Articulos.push_back(articulos1);
+
 }
