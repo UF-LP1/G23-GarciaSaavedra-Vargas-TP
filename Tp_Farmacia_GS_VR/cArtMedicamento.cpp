@@ -13,9 +13,15 @@
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-cArtMedicamento::cArtMedicamento(string NombreArticulos, double Precio, const string codigo, double Stock,string Dosis, string IndicacionesEspeciales, eMedicamentos productos)
+cArtMedicamento::cArtMedicamento(string nombredroga, double precio, const string codigo, double stock, string dosis, string indicacionesespeciales, eMedicamentos drogas)
     :cArticulos(NombreArticulo, Precio, Codigo, Stock) {
-    this->Productos = productos;
+    this->NombreArticulo = nombredroga;
+    this->Precio = precio;
+    this->Stock = stock;
+    this->Dosis = dosis;
+    this->IndicacionesEspeciales = indicacionesespeciales;
+    this->Drogas = drogas;
+
 }
 
 cArtMedicamento::~cArtMedicamento()

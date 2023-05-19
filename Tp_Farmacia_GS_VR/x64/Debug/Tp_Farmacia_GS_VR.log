@@ -1,5 +1,79 @@
-﻿  cCaja.cpp
-  cFarmacia.cpp
+﻿  cCarrito.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xutility(4145,16): error C2280: 'cArticulos &cArticulos::operator =(const cArticulos &)': se está intentando hacer referencia a una función eliminada.
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47): message : el compilador generó 'cArticulos::operator =' aquí
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47,1): message : "cArticulos &cArticulos::operator =(const cArticulos &)": la función se eliminó implícitamente porque un objeto "cArticulos::Codigo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(43): message : vea la declaración de 'cArticulos::Codigo'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1314): message : Vea la referencia a la creación de una instancia de la función plantilla "_OutIt *std::_Copy_unchecked<_Iter,cArticulos*>(_InIt,_InIt,_OutIt)" que se está compilando
+          with
+          [
+              _OutIt=cArticulos *,
+              _Iter=cArticulos *,
+              _InIt=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1337): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::_Assign_range<_Iter>(_Iter,_Iter,std::forward_iterator_tag)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1337): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::_Assign_range<_Iter>(_Iter,_Iter,std::forward_iterator_tag)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1361): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::assign<cArticulos*,0>(_Iter,_Iter)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1361): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::assign<cArticulos*,0>(_Iter,_Iter)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1345): message : al compilar la función del miembro clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)"
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(7): message : Vea la referencia a la creación de una instancia de la función plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)" que se está compilando
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.h(32): message : Vea la referencia a la creación de una instancia de clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>>" que se está compilando
+  cCliente.cpp
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.cpp(55,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xutility(4145,16): error C2280: 'cArticulos &cArticulos::operator =(const cArticulos &)': se está intentando hacer referencia a una función eliminada.
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47): message : el compilador generó 'cArticulos::operator =' aquí
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47,1): message : "cArticulos &cArticulos::operator =(const cArticulos &)": la función se eliminó implícitamente porque un objeto "cArticulos::Codigo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(43): message : vea la declaración de 'cArticulos::Codigo'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1314): message : Vea la referencia a la creación de una instancia de la función plantilla "_OutIt *std::_Copy_unchecked<_Iter,cArticulos*>(_InIt,_InIt,_OutIt)" que se está compilando
+          with
+          [
+              _OutIt=cArticulos *,
+              _Iter=cArticulos *,
+              _InIt=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1337): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::_Assign_range<_Iter>(_Iter,_Iter,std::forward_iterator_tag)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1337): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::_Assign_range<_Iter>(_Iter,_Iter,std::forward_iterator_tag)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1361): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::assign<cArticulos*,0>(_Iter,_Iter)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1361): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::assign<cArticulos*,0>(_Iter,_Iter)" que se está compilando
+          with
+          [
+              _Iter=cArticulos *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1345): message : al compilar la función del miembro clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)"
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.cpp(25): message : Vea la referencia a la creación de una instancia de la función plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)" que se está compilando
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.h(32): message : Vea la referencia a la creación de una instancia de clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>>" que se está compilando
   Main.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(9,112): error C2661: 'cCliente::cCliente': ninguna función sobrecargada acepta 9 argumentos
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,119): error C2665: 'cCliente::cCliente': ninguna de las 3 sobrecargas pudo convertir todos los tipos de argumento
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.h(31,1): message : puede ser 'cCliente::cCliente(cTicket,std::string,const double,bool,eMediosDePago,std::string,eNecesidad,std::vector<cArticulos,std::allocator<cArticulos>>,double,cCarrito)'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,20): message : 'cCliente::cCliente(cTicket,std::string,const double,bool,eMediosDePago,std::string,eNecesidad,std::vector<cArticulos,std::allocator<cArticulos>>,double,cCarrito)': el argumento 3 no puede convertirse de 'const char [9]' a 'const double'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,38): message : No existe un contexto en el que sea posible realizar esta conversión
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.h(31,1): message : vea la declaración de 'cCliente::cCliente'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,119): message : al hacer coincidir la lista de argumentos '(cTicket, const char [5], const char [9], bool, eMediosDePago, const char [14], eNecesidad, const char [10], int, cCarrito)'
   Generando código...

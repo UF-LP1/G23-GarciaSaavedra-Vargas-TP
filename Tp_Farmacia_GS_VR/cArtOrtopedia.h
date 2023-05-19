@@ -18,7 +18,7 @@ public:
  * @param bool ConReceta
  * @param string InstruccionesDeUso
  */
-cArtOrtopedia(bool EmpaqueEspecial, bool ConReceta,string InstruccionesDeUso,eOrtopedia productos);
+cArtOrtopedia(string articuloortopedia,double Precio, const string codigo, double Stock,bool EmpaqueEspecial, bool ConReceta,string InstruccionesDeUso,eOrtopedia productos);
 ~cArtOrtopedia();
 
 void get_EntregaInstantanea();

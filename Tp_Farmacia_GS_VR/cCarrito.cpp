@@ -29,3 +29,13 @@ void cCarrito::set_articulos(cArticulos articulos1) {
 	Articulos.push_back(articulos1);
 
 }
+
+void cCarrito::set_PrecioTotal(double preciototal) {
+	this->Preciototal = preciototal;
+}
+
+double SumarPrecios(vector<cArticulos*> articulos) {
+	cArticulos auxarticulo1 = *articulos[0];
+	auxarticulo1.
+
+}

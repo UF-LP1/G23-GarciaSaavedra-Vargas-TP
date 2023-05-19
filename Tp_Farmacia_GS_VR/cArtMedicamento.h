@@ -18,14 +18,14 @@ public:
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-cArtMedicamento(string Articulos, double Precio, const string codigo, double Stock,string Dosis,string IndicacionesEspeciales,eMedicamentos productos);
+cArtMedicamento(string nombredroga, double Precio, const string codigo, double Stock,string Dosis,string IndicacionesEspeciales,eMedicamentos drogas);
 ~cArtMedicamento(); 
 void get_Dosis();
       
 private: 
     string Dosis;
     string IndicacionesEspeciales;
-    eMedicamentos Productos;
+    eMedicamentos Drogas;
 };
 
 #endif //_CARTMEDICAMENTO_H

@@ -16,7 +16,7 @@
  */
 
 cArtGolosina::cArtGolosina(string Promocion)
-    :cArticulos(Articulo, Precio, Codigo, Stock) {
+    :cArticulos(NombreArticulo, Precio, Codigo, Stock) {
 
 }
 cArtGolosina::~cArtGolosina() {

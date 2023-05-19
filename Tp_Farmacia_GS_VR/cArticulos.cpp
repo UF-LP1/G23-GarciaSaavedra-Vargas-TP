@@ -58,3 +58,8 @@ void cArticulos::set_Precio(double) {
 void cArticulos::get_codigo() {
     return;
 }
+
+double cArticulos::get_Precio() {
+    return Precio;
+}
+

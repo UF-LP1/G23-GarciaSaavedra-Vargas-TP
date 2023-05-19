@@ -27,7 +27,7 @@
     <ClCompile Include="cArtOrtopedia.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="cArtPerfumería.cpp">
+    <ClCompile Include="cArtPerfumeria.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="cAsistenteAutomático.cpp">

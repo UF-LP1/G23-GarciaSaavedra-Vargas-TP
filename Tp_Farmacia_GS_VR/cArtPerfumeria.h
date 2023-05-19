@@ -18,7 +18,7 @@ public:
  * @param bool Importado
  * @param ePerfumeria Productos
  */
-cArtPerfumeria(string Origen, bool Importado, ePerfumeria Productos);
+cArtPerfumeria(string nombrearticulo,double Precio, const string codigo, double Stock,string Origen, bool Importado, ePerfumeria Productos);
 ~cArtPerfumeria();
     
 void get_Imprortado();

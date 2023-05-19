@@ -23,7 +23,7 @@
     <ClCompile Include="cArticulos.cpp" />
     <ClCompile Include="cArtMedicamento.cpp" />
     <ClCompile Include="cArtOrtopedia.cpp" />
-    <ClCompile Include="cArtPerfumería.cpp" />
+    <ClCompile Include="cArtPerfumeria.cpp" />
     <ClCompile Include="cAsistenteAutomático.cpp" />
     <ClCompile Include="cCaja.cpp" />
     <ClCompile Include="cCarrito.cpp" />

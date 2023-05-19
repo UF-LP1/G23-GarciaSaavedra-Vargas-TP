@@ -36,6 +36,7 @@ public:
     void set_Precio(double);
 
     void get_codigo();
+    double get_Precio();
   
 protected:
     string NombreArticulo;

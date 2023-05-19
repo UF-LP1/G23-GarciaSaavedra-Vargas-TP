@@ -23,7 +23,8 @@ public:
      * @param cCliente
      */
     //HACER UN SET Y UN GET PARA PODER MODIFICAR EL VECTOR DE ARTICULOS DESDE EMPLEADO
-
+    void set_PrecioTotal(double preciototal);
+    double SumarPrecios(vector<cArticulos> articulos);
 
 private:
     const string Idcarrito;

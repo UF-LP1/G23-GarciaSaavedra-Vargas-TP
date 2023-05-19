@@ -19,10 +19,10 @@
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
- cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago, string mail, eNecesidad Necesidad, string productoAComprar, double billetera,cCarrito carrito):Dni(dni){
+ cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago, string mail, eNecesidad Necesidad, vector<cArticulos> productoAComprar, double billetera,cCarrito carrito):Dni(dni){
      this->Receta = receta;
      this->NombreYApellido = nombreYApellido;
-     this-> ProductoAComprar = productoAComprar;
+     this->ProductoAComprar = productoAComprar;
      this->Billetera = billetera;
  }
  cCliente::cCliente():Dni(0) {
