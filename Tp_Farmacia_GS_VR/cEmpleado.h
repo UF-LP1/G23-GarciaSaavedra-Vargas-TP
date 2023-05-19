@@ -9,6 +9,7 @@
 #include <string>*/
 #include <time.h>
 #include <vector>
+#include <queue>
 using namespace std;
 #include "cCliente.h"
 
@@ -31,7 +32,7 @@ cEmpleado();
  * @param cArticulos
  */
 void AtenderCliente(cCliente);
-void AgregarACarrito(cArticulos articulo);
+virtual void AgregarACarrito(cArticulos articulo);//quiero hacerla virtual para que los distintos empleados la usen para cada cosa
     
 /**
  * @param cTicket

@@ -8,7 +8,6 @@
 
 #include "cEmpleado.h"
 
-
 class cEmpleadoFarmaceutico: public cEmpleado {
 public: 
     

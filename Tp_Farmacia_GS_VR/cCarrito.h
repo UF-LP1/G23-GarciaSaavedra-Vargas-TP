@@ -19,6 +19,8 @@ public:
     cCarrito(const string idcarrito, int contproductos, double preciototal, vector<cArticulos> articulos);
     cCarrito();
     ~cCarrito();
+    vector<cArticulos> get_VectorArticulos();
+    void set_articulos(cArticulos articulos);
     /**
      * @param cCliente
      */
@@ -29,7 +31,7 @@ private:
     const string Idcarrito;
     int Contproductos;
     double Preciototal;
-    vector<cArticulos> artactuales;
+    vector<cArticulos> Articulos;
 
 };
 

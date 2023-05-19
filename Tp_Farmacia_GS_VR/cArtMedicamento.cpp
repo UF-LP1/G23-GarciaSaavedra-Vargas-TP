@@ -16,7 +16,7 @@
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-cArtMedicamento::cArtMedicamento(string Dosis,bool VentaLibre,string IndicacionesEspeciales, eMedicamentos Productos)
+cArtMedicamento::cArtMedicamento(string Dosis,string IndicacionesEspeciales, eMedicamentos Productos)
     :cArticulos(Articulo, Precio, Codigo, Stock) {
 
 }
@@ -30,16 +30,4 @@ cArtMedicamento::~cArtMedicamento()
  */
 void cArtMedicamento::get_Dosis() {
     return;
-}
-
-/**
- * @param bool
- * @return void
- */
-void cArtMedicamento::set_VentaLibre (bool) {
-    return;
-}
-
-void cArtMedicamento::artMedicamento() {
-
 }

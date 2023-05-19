@@ -33,10 +33,9 @@ void cEmpleadoFarmaceutico::AplicarDescuento(cTicket ticket1, cCliente cliente1)
         ticket1.set_preciof(ticket1.get_PrecioFinal() * 0.9);
     }
     //si la necesidad del cliente incluye un descuento, se le agrega un descuento
-
-    // ya estaría hecho en empleado base, nose si tiene sentido que este aca adentro
-    return;
+   
 }
 void cEmpleadoFarmaceutico::AgregarACarrito() {
   
+
 }

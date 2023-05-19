@@ -17,3 +17,11 @@ cCarrito::~cCarrito()
 {
 }
 
+vector<cArticulos> cCarrito::get_VectorArticulos() {
+
+	return Articulos;
+}
+void cCarrito::set_articulos(cArticulos articulos1) {
+
+	Articulos.push_back(articulos1);
+}

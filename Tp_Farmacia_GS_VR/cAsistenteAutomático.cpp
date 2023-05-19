@@ -23,34 +23,24 @@ cAsistenteAutomatico::~cAsistenteAutomatico() {
 void cAsistenteAutomatico::EntregarTicket(cCliente) {
     return;
 }
+void cAsistenteAutomatico::RecibirCliente(cCliente clienteentrante)
+{
+    this->nuevosclientes.push(clienteentrante);
+}
 
-void AsignarEmpleado(cCliente cliente) {
-
-    if (cliente.get_necesidad() == ObraSocial|| Particular || Pami){
-
+cCliente  cAsistenteAutomatico::AsignarEmpleado() {
+    cCliente clienteentrante;
+    if (clienteentrante.get_necesidad() == ObraSocial || Particular || Pami) {
+    
+        cCliente proximoFarmacia = this->nuevosclientes.front();
+        //aca enrealidad lo podria sumar a una cola que tenga cada empleado, en este caso el farmaceutico
+        nuevosclientes.pop();
+      
     }
-
-
-
-
-   /* eNecesidad necesidadAuxiliar;
-    switch () {
-    case 1:
-        necesidadAuxiliar = ObraSocial;
-        break;
-    case 2:
-        necesidadAuxiliar = Particular;
-        break;
-    case 3:
-        necesidadAuxiliar = Pami;
-        break;
-    case 4:
-        necesidadAuxiliar = Perfumeria;
-        break;
-    case 5:
-        necesidadAuxiliar = Ortopedia;
-        break;*/
-
+    else if (clienteentrante.get_necesidad() == Ortopedia) {
+        cCliente proximoOrtopedia;
+       //aca lo sumaria a la cola de ortopedia
+    }
 }
 
 

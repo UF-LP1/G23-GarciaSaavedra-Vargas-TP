@@ -20,17 +20,10 @@ public:
  * @param string IndicacionesEspeciales
  * @param eMedicamentos Productos
  */
-cArtMedicamento(string Dosis, bool VentaLibre, string IndicacionesEspeciales,eMedicamentos Productos);
+cArtMedicamento(string Dosis,string IndicacionesEspeciales,eMedicamentos Productos);
 ~cArtMedicamento(); 
 void get_Dosis();
-    
-/**
- * @param bool
- */
-void set_VentaLibre(bool);
-protected: 
-    
-void artMedicamento();
+      
 private: 
     string Dosis;
     bool VentaLibre;

@@ -6,6 +6,7 @@
 #ifndef _CASISTENTEAUTOMATICO_H
 #define _CASISTENTEAUTOMATICO_H
 #include "cEmpleado.h"
+#include <queue>
 class cAsistenteAutomatico {
 public: 
     
@@ -16,11 +17,13 @@ cAsistenteAutomatico();
  * @param cCliente
  */
 void EntregarTicket(cCliente);
-void AsignarEmpleado(cCliente cliente);
+void RecibirCliente(cCliente);
+cCliente AsignarEmpleado();
 protected: 
     
 private: 
     static int clientesAtendidos;
+    queue<cCliente> nuevosclientes;
 };
 
 #endif //_CASISTENTEAUTOMÁTICO_H

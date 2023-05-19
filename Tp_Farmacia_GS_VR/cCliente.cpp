@@ -19,7 +19,7 @@
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
- cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago,  string mail, eNecesidad Necesidad, string productoAComprar, double billetera):Dni(dni){
+ cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago,  string mail, eNecesidad Necesidad, string productoAComprar, double billetera,cCarrito carrito):Dni(dni){
      this->Receta = receta;
      this->NombreYApellido = nombreYApellido;
      this-> ProductoAComprar = productoAComprar;
@@ -42,10 +42,11 @@
  * @param Codigo
  * @return void
  */
-void cCliente::SeleccionarProducto(const double Codigo) {
-
-
-    return;
+void cCliente::SeleccionarProducto(const double Codigo,cArticulos articulos,cCarrito carrito) {
+    /*le llega un codigo y con un for busca ese codigo en la lista de productos y
+    si lo encuentra lo agrega al carrito*/
+    //se podria hacer con algo dinamico aca, poner un for que vaya llenando el carrito
+    carrito.set_articulos(articulos);
 }
 
 /**
