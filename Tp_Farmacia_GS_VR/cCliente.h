@@ -28,7 +28,7 @@ public:
  * @param string ProductoAComprar
  */
    
-cCliente(cTicket ticket,string nombreYApellido,const double dni, bool receta, eMediosDePago mediodepago, string mail,eNecesidad Necesidad,vector<cArticulos> productoAComprar, double billetera,cCarrito carrito);
+cCliente(cTicket ticket,string nombreYApellido,const double dni, eMediosDePago mediodepago, string mail,eNecesidad Necesidad,vector<cArticulos> productoAComprar, double billetera,cCarrito carrito);
 cCliente();
 ~cCliente();
 
@@ -46,7 +46,6 @@ cTicket RecibirTicket();
  */
 private: 
     cTicket ticket;
-    bool Receta;
     string NombreYApellido;
     vector<cArticulos> ProductoAComprar;
     const double Dni;

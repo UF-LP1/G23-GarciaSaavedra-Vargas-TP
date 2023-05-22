@@ -15,9 +15,9 @@
  * @param double PrecioFinal
  * @param eMediosDePago MetodosDePago
  */
-cTicket::cTicket(string codigoticket, double PrecioFinal, eMediosDePago metodosdepago):CodigoTicket(codigoticket)
+cTicket::cTicket(string codigoticket, double preciofinal, eMediosDePago metodosdepago):CodigoTicket(codigoticket)
 {
-    this->PrecioFinal = PrecioFinal;
+    this->PrecioFinal = preciofinal;
     this->MetodoDePago = metodosdepago;
 
 }
@@ -50,6 +50,3 @@ void cTicket:: set_preciof(double preciofinal)
  * @param cArticulos
  * @return void
  */
-void cTicket::AgregarProducto(cArticulos) {
-    return;
-}

@@ -1,12 +1,13 @@
 #include "cCarrito.h"
 
-cCarrito::cCarrito(const string idcarrito, int contproductos, double preciototal, vector<cArticulos> articulos):Idcarrito(idcarrito)
+cCarrito::cCarrito(const string idcarrito, int contproductos, double preciototal, vector<cArticulos*> articulos):Idcarrito(idcarrito)
 {
 	this->Contproductos = contproductos;
 	this->Preciototal = preciototal;
 	this->Articulos = articulos;
 
 }
+
 
 cCarrito::cCarrito()
 {
@@ -16,26 +17,34 @@ cCarrito::cCarrito()
 
 cCarrito::~cCarrito()
 {
-// hacer los delete de los vectores
+	// hacer los delete de los vectores
+	for (auto aux = Articulos.begin(); aux != Articulos.end(); ++aux) {
+		delete* aux;
+	}
+
+
+
 }
 
-vector<cArticulos> cCarrito::get_VectorArticulos() {
+vector<cArticulos*> cCarrito::get_VectorArticulos() {
 
 	return Articulos;
 }
 
-void cCarrito::set_articulos(cArticulos articulos1) {
-
-	Articulos.push_back(articulos1);
-
+void cCarrito::set_articulos(cArticulos* articulos1) //tengo que eliminar este puntero tambien?
+{
+	this->Articulos.push_back(articulos1);
 }
 
 void cCarrito::set_PrecioTotal(double preciototal) {
 	this->Preciototal = preciototal;
 }
 
-double SumarPrecios(vector<cArticulos*> articulos) {
-	cArticulos auxarticulo1 = *articulos[0];
-	auxarticulo1.
-
+void cCarrito::SumarPrecios(vector<cArticulos*> articulos) {
+	double precioaux;
+	for (int i = 0; i < 1; i++) {
+		cArticulos auxarticulo1 = *articulos[i];
+		precioaux = precioaux + auxarticulo1.get_Precio();
+	}
+	this->Preciototal = precioaux;
 }

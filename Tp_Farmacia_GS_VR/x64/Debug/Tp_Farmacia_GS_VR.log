@@ -1,44 +1,38 @@
-﻿  cCarrito.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xutility(4145,16): error C2280: 'cArticulos &cArticulos::operator =(const cArticulos &)': se está intentando hacer referencia a una función eliminada.
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47): message : el compilador generó 'cArticulos::operator =' aquí
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47,1): message : "cArticulos &cArticulos::operator =(const cArticulos &)": la función se eliminó implícitamente porque un objeto "cArticulos::Codigo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(43): message : vea la declaración de 'cArticulos::Codigo'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1314): message : Vea la referencia a la creación de una instancia de la función plantilla "_OutIt *std::_Copy_unchecked<_Iter,cArticulos*>(_InIt,_InIt,_OutIt)" que se está compilando
+﻿  cAsistenteAutomático.cpp
+  cCaja.cpp
+  cCarrito.cpp
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(25,18): error C2440: 'return': no se puede realizar la conversión de 'std::vector<cArticulos *,std::allocator<cArticulos *>>' a 'std::vector<cArticulos,std::allocator<cArticulos>>'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(25,2): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(30,38): error C2665: 'std::vector<cArticulos *,std::allocator<cArticulos *>>::push_back': ninguna de las 2 sobrecargas pudo convertir todos los tipos de argumento
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(916,23): message : puede ser 'void std::vector<cArticulos *,std::allocator<cArticulos *>>::push_back(_Ty &&)'
           with
           [
-              _OutIt=cArticulos *,
-              _Iter=cArticulos *,
-              _InIt=cArticulos *
+              _Ty=cArticulos *
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1337): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::_Assign_range<_Iter>(_Iter,_Iter,std::forward_iterator_tag)" que se está compilando
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(912,23): message : o       'void std::vector<cArticulos *,std::allocator<cArticulos *>>::push_back(const _Ty &)'
           with
           [
-              _Iter=cArticulos *
+              _Ty=cArticulos *
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1337): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::_Assign_range<_Iter>(_Iter,_Iter,std::forward_iterator_tag)" que se está compilando
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(30,17): message : 'void std::vector<cArticulos *,std::allocator<cArticulos *>>::push_back(const _Ty &)': el argumento 1 no puede convertirse de 'cArticulos' a 'const _Ty &'
           with
           [
-              _Iter=cArticulos *
+              _Ty=cArticulos *
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1361): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::assign<cArticulos*,0>(_Iter,_Iter)" que se está compilando
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(30,38): message : Razón: no se puede realizar la conversión de 'cArticulos' a 'const _Ty'
           with
           [
-              _Iter=cArticulos *
+              _Ty=cArticulos *
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1361): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::vector<cArticulos,std::allocator<cArticulos>>::assign<cArticulos*,0>(_Iter,_Iter)" que se está compilando
-          with
-          [
-              _Iter=cArticulos *
-          ]
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1345): message : al compilar la función del miembro clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)"
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(7): message : Vea la referencia a la creación de una instancia de la función plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)" que se está compilando
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.h(32): message : Vea la referencia a la creación de una instancia de clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>>" que se está compilando
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(30,28): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(912,23): message : vea la declaración de 'std::vector<cArticulos *,std::allocator<cArticulos *>>::push_back'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.cpp(30,38): message : al hacer coincidir la lista de argumentos '(cArticulos)'
   cCliente.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.cpp(55,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.cpp(47,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xutility(4145,16): error C2280: 'cArticulos &cArticulos::operator =(const cArticulos &)': se está intentando hacer referencia a una función eliminada.
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47): message : el compilador generó 'cArticulos::operator =' aquí
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(47,1): message : "cArticulos &cArticulos::operator =(const cArticulos &)": la función se eliminó implícitamente porque un objeto "cArticulos::Codigo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(43): message : vea la declaración de 'cArticulos::Codigo'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(48): message : el compilador generó 'cArticulos::operator =' aquí
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(48,1): message : "cArticulos &cArticulos::operator =(const cArticulos &)": la función se eliminó implícitamente porque un objeto "cArticulos::Codigo" miembro de datos no tiene ningún elemento operador de asignación de copia adecuado o la resolución de sobrecarga era ambigua.
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cArticulos.h(44): message : vea la declaración de 'cArticulos::Codigo'
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1314): message : Vea la referencia a la creación de una instancia de la función plantilla "_OutIt *std::_Copy_unchecked<_Iter,cArticulos*>(_InIt,_InIt,_OutIt)" que se está compilando
           with
           [
@@ -67,13 +61,16 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.3162
               _Iter=cArticulos *
           ]
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(1345): message : al compilar la función del miembro clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)"
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.cpp(25): message : Vea la referencia a la creación de una instancia de la función plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)" que se está compilando
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCarrito.h(32): message : Vea la referencia a la creación de una instancia de clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>>" que se está compilando
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.cpp(21): message : Vea la referencia a la creación de una instancia de la función plantilla "std::vector<cArticulos,std::allocator<cArticulos>> &std::vector<cArticulos,std::allocator<cArticulos>>::operator =(const std::vector<cArticulos,std::allocator<cArticulos>> &)" que se está compilando
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.h(50): message : Vea la referencia a la creación de una instancia de clase plantilla "std::vector<cArticulos,std::allocator<cArticulos>>" que se está compilando
+  cEmpleado.cpp
+  cEmpleadoFarmaceutico.cpp
+  cEmpleadoLimpieza.cpp
+  cEmpleadoOrtopedia.cpp
+  cEmpleadoPerfumeria.cpp
+  cFarmacia.cpp
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cFarmacia.cpp(62,29): warning C4930: 'cEmpleadoPerfumeria empleado1p(void)': no se ha llamado a la función prototipo (¿se pensó una definición de variable?)
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cFarmacia.cpp(64,28): warning C4930: 'cEmpleadoOrtopedia empleado1o(void)': no se ha llamado a la función prototipo (¿se pensó una definición de variable?)
   Main.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,119): error C2665: 'cCliente::cCliente': ninguna de las 3 sobrecargas pudo convertir todos los tipos de argumento
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.h(31,1): message : puede ser 'cCliente::cCliente(cTicket,std::string,const double,bool,eMediosDePago,std::string,eNecesidad,std::vector<cArticulos,std::allocator<cArticulos>>,double,cCarrito)'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,20): message : 'cCliente::cCliente(cTicket,std::string,const double,bool,eMediosDePago,std::string,eNecesidad,std::vector<cArticulos,std::allocator<cArticulos>>,double,cCarrito)': el argumento 3 no puede convertirse de 'const char [9]' a 'const double'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,38): message : No existe un contexto en el que sea posible realizar esta conversión
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.h(31,1): message : vea la declaración de 'cCliente::cCliente'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,119): message : al hacer coincidir la lista de argumentos '(cTicket, const char [5], const char [9], bool, eMediosDePago, const char [14], eNecesidad, const char [10], int, cCarrito)'
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(22,135): error C2661: 'cCliente::cCliente': ninguna función sobrecargada acepta 10 argumentos
   Generando código...

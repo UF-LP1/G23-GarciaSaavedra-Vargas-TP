@@ -16,8 +16,6 @@ using namespace std;
 
 class cFarmacia {
 public: 
-    
-    
 /**
  * @param string Nombre
  * @param string Direccion
@@ -27,11 +25,9 @@ public:
  * @param double GananciaTotal
  */
 cFarmacia(cCaja caja,string Nombre,string Direccion, time_t horario,const string telefono,bool estado,double gananciatotal,cAsistenteAutomatico asistente);
-//cFarmacia();
 ~cFarmacia();
 
 void EstadoFarmacia();
-    
 /**
  * @param cArticulos
  */

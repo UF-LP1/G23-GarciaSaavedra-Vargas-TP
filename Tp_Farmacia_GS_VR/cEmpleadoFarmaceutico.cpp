@@ -35,7 +35,8 @@ void cEmpleadoFarmaceutico::AplicarDescuento(cTicket ticket1, cCliente cliente1)
     //si la necesidad del cliente incluye un descuento, se le agrega un descuento
    
 }
-void cEmpleadoFarmaceutico::AgregarACarrito() {
-  
+void cEmpleado::AgregarACarrito(cArticulos articulos) {
+  //recibe el nombre del articulo del cliente?
+  // lo agregaba aca o lo hacia en el cliente?
 
 }

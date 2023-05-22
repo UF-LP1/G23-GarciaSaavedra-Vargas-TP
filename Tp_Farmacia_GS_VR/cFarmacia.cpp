@@ -1,14 +1,13 @@
 /**
  * Project Untitled
  */
-
-
 #include "cFarmacia.h"
-
+#include "cEmpleadoFarmaceutico.h"
+#include "cEmpleadoPerfumeria.h"
+#include  "cEmpleadoOrtopedia.h"
 /**
  * cFarmacia implementation
  */
-
 /**
  * @param string Nombre
  * @param string Direccion
@@ -17,6 +16,7 @@
  * @param bool Estado
  * @param double GananciaTotal
  */
+
 cFarmacia::cFarmacia(cCaja caja, string Nombre, string Direccion, time_t horario, string telefono, bool estado, double gananciatotal,cAsistenteAutomatico asistente):Telefono(telefono)
 {
     this->Estado = estado;
@@ -53,12 +53,15 @@ void cFarmacia::ChequearStock(cArticulos) {
  * @param cArticulos
  * @return void
  */
-void cFarmacia::RecibirCliente(cCliente,cArticulos) {
-
-    //recibir el enum de medios de pago del asistente automatico y desarrollar este metodo asignandole a los empleados
-
-
-    return;
+void cFarmacia::RecibirCliente(cCliente cliente,cArticulos articulos) {
+    //recibir el enum de necesidad del asistente automatico y desarrollar este metodo asignandole a los empleados
+    if (cliente.get_necesidad() == ObraSocial || Particular || Pami) {
+        cEmpleadoFarmaceutico empleado1f("matricula x");
+    }
+    else if (cliente.get_necesidad() == Perfumeria)
+        cEmpleadoPerfumeria empleado1p();
+    else 
+        cEmpleadoOrtopedia empleado1o();
 }
 
 /**

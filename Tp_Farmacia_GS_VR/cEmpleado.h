@@ -47,7 +47,6 @@ protected:
     const string Dni;
     time_t Horario{};
     vector<cCliente> listaclientes;
-
 };
 
 #endif //_CEMPLEADO_H

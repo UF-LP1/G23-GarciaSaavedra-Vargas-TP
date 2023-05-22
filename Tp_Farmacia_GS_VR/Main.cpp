@@ -5,11 +5,10 @@
 #include "cArtPerfumeria.h"
 
 
-
 int main() {
 
 	vector<cArticulos*> vectorart;
-	
+	//articulos:
 	cArtMedicamento articulo1("", 500, "Id:1234", 500, "200mg", "venta bajo receta", Ibuprofeno);//COMPLETAR CON LOS ATRIBUTOS DE PADRE
 	cArtOrtopedia articulo2("Cabestrillo", 200, "0001", 50, false, true, "sin instrucciones", Cabestrillos);
 
@@ -19,10 +18,8 @@ int main() {
 
 	cTicket miticket("123456",1500,Debito);
 	cCarrito carrito("id:1234", 1, 2000, vectorart);
-	cCliente micliente(miticket,"Juan", "45000000", true, Debito, "juan@juan.com", ObraSocial, "pastillas", 10000,carrito);
-
-
-
+	cFarmacia mifarmacia();
+	cCliente micliente(miticket,"Juan Cruz Mercatante", "45000000", true, Debito, "juan@juan.com", ObraSocial, "pastillas", 10000,carrito);
 
 
 

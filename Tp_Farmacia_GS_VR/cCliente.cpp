@@ -1,15 +1,11 @@
 /**
  * Project Untitled
  */
-
-
 #include "cCliente.h"
 
 /**
  * cCliente implementation
  */
-
-
 /**
  * @param string NombreYApellido
  * @param const double Dni
@@ -19,21 +15,16 @@
  * @param eNecesidad Necesidad
  * @param string ProductoAComprar
  */
- cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, bool receta,eMediosDePago MedioDePago, string mail, eNecesidad Necesidad, vector<cArticulos> productoAComprar, double billetera,cCarrito carrito):Dni(dni){
-     this->Receta = receta;
+
+ cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, eMediosDePago MedioDePago, string mail, eNecesidad Necesidad, vector<cArticulos> productoAComprar, double billetera,cCarrito carrito):Dni(dni){
      this->NombreYApellido = nombreYApellido;
      this->ProductoAComprar = productoAComprar;
      this->Billetera = billetera;
  }
  cCliente::cCliente():Dni(0) {
-     this->Receta = {};
      this->Billetera = 0;
      this->Necesidad = Pami;
  }
-/* cCliente::cCliente(double dni):Dni(dni){// NO ENTIENDO QUE PASA CON ESTE CONSTRUCTOR
-     
- }*/
-
 
  cCliente::~cCliente(){
  }
@@ -41,6 +32,7 @@
  * @param Codigo
  * @return void
  */
+
 void cCliente::SeleccionarProducto(const double Codigo,cArticulos articulos,cCarrito carrito) {
     /*le llega un codigo y con un for busca ese codigo en la lista de productos y
     si lo encuentra lo agrega al carrito*/

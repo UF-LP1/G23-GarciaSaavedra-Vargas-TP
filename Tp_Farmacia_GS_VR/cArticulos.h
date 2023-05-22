@@ -40,11 +40,9 @@ public:
   
 protected:
     string NombreArticulo;
-    double Precio{};
+    double Precio;
     const string Codigo;
-    double Stock{};
-
-
+    double Stock;
 };
 
 #endif //_CARTICULOS_H

@@ -22,10 +22,9 @@ cCaja();
  * @param cCliente
  */
 double Cobrar(cCliente);
-    
+
 double get_Saldo();
- 
-    
+
 private: 
     double Saldo;
 };

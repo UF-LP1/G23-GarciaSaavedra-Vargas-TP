@@ -10,10 +10,11 @@
  */
 
 
-cArticulos::cArticulos(string nombrearticulo, double Precio, const string codigo, double Stock):Codigo(codigo)
+cArticulos::cArticulos(string nombrearticulo, double precio, const string codigo, double stock):Codigo(codigo)
 {
     this->NombreArticulo = nombrearticulo;
-
+    this->Precio = precio;
+    this->Stock = stock;
 }
 
 /**
@@ -25,6 +26,8 @@ cArticulos::cArticulos(string nombrearticulo, double Precio, const string codigo
 
 cArticulos::cArticulos()
 {
+    this->Precio = 0;
+    this->Stock = 0;
 }
 cArticulos::~cArticulos()
 {

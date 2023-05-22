@@ -18,9 +18,7 @@ cAsistenteAutomatico();
  */
 void EntregarTicket(cCliente);
 void RecibirCliente(cCliente);
-void AsignarEmpleado();
-protected: 
-    
+
 private: 
     static int clientesAtendidos;
     queue<cCliente> nuevosclientes;
