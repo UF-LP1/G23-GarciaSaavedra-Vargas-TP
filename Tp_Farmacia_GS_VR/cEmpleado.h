@@ -23,7 +23,7 @@ public:
  * @param time Horario
  */
     
-cEmpleado(string NombreYApellido,const string Dni, time_t Horario);
+cEmpleado(string NombreYApellido,const string Dni, time_t Horario, vector<cCliente> listaclientes);
 cEmpleado();
 ~cEmpleado();
     
@@ -31,8 +31,11 @@ cEmpleado();
  * @param cCliente
  * @param cArticulos
  */
+
+
 void AtenderCliente(cCliente);
-virtual void AgregarACarrito(cArticulos articulo);//quiero hacerla virtual para que los distintos empleados la usen para cada cosa
+
+void AgregarACarrito(cCliente cliente);//quiero hacerla virtual para que los distintos empleados la usen para cada cosa
     
 /**
  * @param cTicket

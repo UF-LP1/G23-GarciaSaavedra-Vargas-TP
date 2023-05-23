@@ -21,14 +21,13 @@ public:
 cArtPerfumeria(string nombrearticulo,double Precio, const string codigo, double Stock,string Origen, bool Importado, ePerfumeria Productos);
 ~cArtPerfumeria();
     
-void get_Imprortado();
+bool get_Imprortado();
     
 /**
  * @param string
  */
-void set_Origen(string);
-protected: 
-    
+string get_Origen();
+
 private: 
     string Origen;
     bool Importado;

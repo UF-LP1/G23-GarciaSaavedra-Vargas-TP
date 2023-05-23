@@ -24,7 +24,7 @@ public:
      */
     //HACER UN SET Y UN GET PARA PODER MODIFICAR EL VECTOR DE ARTICULOS DESDE EMPLEADO
     void set_PrecioTotal(double preciototal);
-    void SumarPrecios(vector<cArticulos*> articulos);
+    void SumarPrecios();
 
 private:
     const string Idcarrito;

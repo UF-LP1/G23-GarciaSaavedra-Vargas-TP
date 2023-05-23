@@ -21,13 +21,9 @@ public:
 cTicket(string CodigoTicket, double preciofinal, eMediosDePago MetodoDePago);
 cTicket();
 ~cTicket();
+
 double get_PrecioFinal();
-//un setter aca que obtenga y pueda modificar el medio de pago, para poder pasarselo a cliente
-
-
-void set_MedotoDePago(eMediosDePago medioactual);
-
-
+void set_MetodoDePago(eMediosDePago medioactual);
 void set_preciof(double preciofinal);
 
 /**

@@ -37,7 +37,7 @@ double cTicket::get_PrecioFinal()
     return PrecioFinal;
 }
 
-void cTicket::set_MedotoDePago(eMediosDePago medioactual)
+void cTicket::set_MetodoDePago(eMediosDePago medioactual)
 {
     this->MetodoDePago = medioactual;
 }

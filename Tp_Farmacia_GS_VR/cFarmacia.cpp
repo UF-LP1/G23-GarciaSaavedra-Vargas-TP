@@ -29,6 +29,7 @@ cFarmacia::cFarmacia(cCaja caja, string Nombre, string Direccion, time_t horario
 {
 }*/
 
+
 cFarmacia::~cFarmacia()
 {
 }
@@ -53,15 +54,21 @@ void cFarmacia::ChequearStock(cArticulos) {
  * @param cArticulos
  * @return void
  */
-void cFarmacia::RecibirCliente(cCliente cliente,cArticulos articulos) {
-    //recibir el enum de necesidad del asistente automatico y desarrollar este metodo asignandole a los empleados
-    if (cliente.get_necesidad() == ObraSocial || Particular || Pami) {
-        cEmpleadoFarmaceutico empleado1f("matricula x");
+void cFarmacia::RecibirCliente(cCliente cliente,cArticulos articulos) {//metodo que recibe la necesidad del empleado desde el asistente automatico y le asigna un empleado creandolo
+   
+  queue<cCliente> colaaux = Asistente.get_cola_clientes();
+
+  while(!colaaux.empty()) {
+        cCliente cliaux = colaaux.front();
+        colaaux.pop();
+        if (cliaux.get_necesidad() == ObraSocial || Particular || Pami) {
+            cEmpleadoFarmaceutico empleado1f("matricula x");//ACA DEBERIA PASAR ALGO MAS QUE SOLO EL CONSTRUCTOR
+        }
+        else if (cliaux.get_necesidad() == Perfumeria)
+            cEmpleadoPerfumeria empleado1p();
+        else
+            cEmpleadoOrtopedia empleado1o();
     }
-    else if (cliente.get_necesidad() == Perfumeria)
-        cEmpleadoPerfumeria empleado1p();
-    else 
-        cEmpleadoOrtopedia empleado1o();
 }
 
 /**

@@ -16,9 +16,9 @@
  * @param string ProductoAComprar
  */
 
- cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, eMediosDePago MedioDePago, string mail, eNecesidad Necesidad, vector<cArticulos> productoAComprar, double billetera,cCarrito carrito):Dni(dni){
+ cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, eMediosDePago MedioDePago, string mail, eNecesidad Necesidad, vector<cArticulos*> productosAComprar, double billetera,cCarrito carrito):Dni(dni){
      this->NombreYApellido = nombreYApellido;
-     this->ProductoAComprar = productoAComprar;
+     this->ProductosAComprar = productosAComprar;
      this->Billetera = billetera;
  }
  cCliente::cCliente():Dni(0) {
@@ -33,11 +33,10 @@
  * @return void
  */
 
-void cCliente::SeleccionarProducto(const double Codigo,cArticulos articulos,cCarrito carrito) {
-    /*le llega un codigo y con un for busca ese codigo en la lista de productos y
-    si lo encuentra lo agrega al carrito*/
-    //se podria hacer con algo dinamico aca, poner un for que vaya llenando el carrito
-    carrito.set_articulos(articulos);
+void cCliente::SeleccionarProducto(const double Codigo,cArticulos* articulos, vector<cArticulos*> productosAComprar) {
+   
+    this->ProductosAComprar.push_back(articulos);
+
 }
 
 /**
@@ -63,7 +62,7 @@ void cCliente::SeleccionarMedioPago() {
         opcionSeleccionada = PagoCelular;
         break;
     }
-    this->ticket.set_MedotoDePago(opcionSeleccionada);
+    this->ticket.set_MetodoDePago(opcionSeleccionada);
 }
 
 /**
@@ -80,6 +79,15 @@ double cCliente::get_Billetera() {
 
     return Billetera;
 }
+
+cCarrito cCliente::get_Carrito() {
+    return this->Carrito;
+}
+
+vector<cArticulos*> cCliente::get_Productos() { //funcion que devuelve el vector de productos elegidos por el cliente
+    return this->ProductosAComprar;
+}
+
 void cCliente::set_Billetera(double billetera) {
     
     this->Billetera = billetera;

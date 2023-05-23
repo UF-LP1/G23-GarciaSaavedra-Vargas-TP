@@ -1,14 +1,11 @@
 /**
  * Project Untitled
  */
-
-
 #include "cArtPerfumeria.h"
 
 /**
  * cArtPerfumeria implementation
  */
-
 
 /**
  * @param string Origen
@@ -23,16 +20,16 @@ cArtPerfumeria::cArtPerfumeria(string nombrearticulo, double Precio, const strin
 /**
  * @return void
  */
-void cArtPerfumeria::get_Imprortado() {
-    return;
+bool cArtPerfumeria::get_Imprortado() {
+    return Importado;
 }
 
 /**
  * @param string
  * @return void
  */
-void cArtPerfumeria::set_Origen(string) {
-    return;
+string cArtPerfumeria::get_Origen() {
+    return Origen;
 }
 
 cArtPerfumeria:: ~cArtPerfumeria() {

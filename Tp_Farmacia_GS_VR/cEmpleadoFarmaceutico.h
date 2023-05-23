@@ -18,9 +18,9 @@ cEmpleadoFarmaceutico(string matricula);
 cEmpleadoFarmaceutico();
 ~cEmpleadoFarmaceutico();
     
-void AplicarDescuento(cTicket ticket1, cCliente cliente1);
-void AgregarACarrito();
 
+void AplicarDescuento();
+//podria haber un metodo virtual que use el que esta en empleado pero aca solo sirva para medicamentos
 
 private: 
     string Matricula;

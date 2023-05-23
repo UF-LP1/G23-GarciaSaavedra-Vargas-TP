@@ -18,6 +18,8 @@ cAsistenteAutomatico();
  */
 void EntregarTicket(cCliente);
 void RecibirCliente(cCliente);
+void contar_clientes();
+queue<cCliente> get_cola_clientes();
 
 private: 
     static int clientesAtendidos;

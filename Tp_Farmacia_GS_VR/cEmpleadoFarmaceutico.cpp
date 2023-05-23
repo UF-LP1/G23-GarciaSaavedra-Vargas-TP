@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #include "cEmpleadoFarmaceutico.h"
 
 /**
@@ -12,7 +11,7 @@
  * @param const string Matricula
  */
 cEmpleadoFarmaceutico::cEmpleadoFarmaceutico(string matricula)
-    :cEmpleado(NombreYApellido, Dni, Horario){
+    :cEmpleado(NombreYApellido, Dni, Horario,listaclientes){
 }
 cEmpleadoFarmaceutico::cEmpleadoFarmaceutico() {
 
@@ -20,23 +19,24 @@ cEmpleadoFarmaceutico::cEmpleadoFarmaceutico() {
 cEmpleadoFarmaceutico::~cEmpleadoFarmaceutico()
 {
 }
+//podria haber un metodo virtual que use el que esta en empleado pero aca solo sirva para medicamentos
 
 /**
  * @return void
  */
-void cEmpleadoFarmaceutico::AplicarDescuento(cTicket ticket1, cCliente cliente1) {
-    if (cliente1.get_necesidad() == ObraSocial)
-    {
-        ticket1.set_preciof(ticket1.get_PrecioFinal() * 0.6);
-    }
-    else if (cliente1.get_necesidad() == Pami) {
-        ticket1.set_preciof(ticket1.get_PrecioFinal() * 0.9);
-    }
-    //si la necesidad del cliente incluye un descuento, se le agrega un descuento
-   
-}
-void cEmpleado::AgregarACarrito(cArticulos articulos) {
-  //recibe el nombre del articulo del cliente?
-  // lo agregaba aca o lo hacia en el cliente?
+void cEmpleadoFarmaceutico::AplicarDescuento() {//es un metodo que analiza que cobertura tiene el cliente y en base a eso aplica descuento
+    for (int i = 0; i < this->listaclientes.size(); i++) {
 
+
+        cCliente cliaux = this->listaclientes[i];
+        cTicket ticketaux = cliaux.RecibirTicket();
+        if (cliaux.get_necesidad() == ObraSocial)
+        {
+            ticketaux.set_preciof(ticketaux.get_PrecioFinal() * 0.6);
+        }
+        else if (cliaux.get_necesidad() == Pami) {
+            ticketaux.set_preciof(ticketaux.get_PrecioFinal() * 0.9);
+        }
+    }
 }
+
