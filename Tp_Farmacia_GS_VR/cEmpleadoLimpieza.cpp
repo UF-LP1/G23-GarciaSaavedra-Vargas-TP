@@ -9,15 +9,14 @@
  * cEmpleadoLimpieza implementation
  */
 
-
 /**
  * @param NombreYAppelido
  * @param Dni
  * @param Horario
  */
 
-cEmpleadoLimpieza::cEmpleadoLimpieza(const string NombreYAppelido, const string Dni, time_t Horario)
-:cEmpleado(NombreYApellido, Dni, Horario){
+cEmpleadoLimpieza::cEmpleadoLimpieza(const string NombreYAppelido, const string Dni,queue<cCliente> listaclientes, string Horario)
+:cEmpleado(NombreYApellido, Dni, Horario,listaclientes){
     
 }
 cEmpleadoLimpieza::~cEmpleadoLimpieza()
@@ -29,4 +28,3 @@ cEmpleadoLimpieza::~cEmpleadoLimpieza()
 void cEmpleadoLimpieza::LimpiarYOrdenar() {
     return;
 }
-

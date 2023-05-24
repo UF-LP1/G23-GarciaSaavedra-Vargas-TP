@@ -10,8 +10,8 @@
  */
 
 
-cEmpleadoOrtopedia::cEmpleadoOrtopedia() 
-	:cEmpleado(NombreYApellido, Dni, Horario){
+cEmpleadoOrtopedia::cEmpleadoOrtopedia(string nombrefarmaceutico, const string dni, string horario, queue<cCliente> colaclientes)
+	:cEmpleado(NombreYApellido, Dni, Horario,listaclientes){
 
 	
 

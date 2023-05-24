@@ -14,7 +14,7 @@ public:
 /**
  * @param const string Matricula
  */
-cEmpleadoFarmaceutico(string matricula);
+cEmpleadoFarmaceutico(string nombrefarmaceutico, const string dni, string horario, queue<cCliente> listaclientes, string matricula);
 cEmpleadoFarmaceutico();
 ~cEmpleadoFarmaceutico();
     

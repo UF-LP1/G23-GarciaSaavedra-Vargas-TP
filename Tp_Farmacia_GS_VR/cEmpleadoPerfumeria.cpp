@@ -11,7 +11,7 @@
 
 
 cEmpleadoPerfumeria::cEmpleadoPerfumeria() 
-	:cEmpleado(NombreYApellido, Dni, Horario) {
+	:cEmpleado(NombreYApellido, Dni, Horario,listaclientes) {
 
 }
 

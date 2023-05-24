@@ -19,8 +19,9 @@ public:
  * @param eMedicamentos Productos
  */
 cArtMedicamento(string nombredroga, double Precio, const string codigo, double Stock,string Dosis,string IndicacionesEspeciales,eMedicamentos drogas);
-~cArtMedicamento(); 
-void get_Dosis();
+cArtMedicamento();
+~cArtMedicamento();
+string get_Dosis();
       
 private: 
     string Dosis;

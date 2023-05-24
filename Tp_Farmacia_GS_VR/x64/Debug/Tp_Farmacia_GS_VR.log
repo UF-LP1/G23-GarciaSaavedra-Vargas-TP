@@ -1,19 +1,4 @@
-﻿  cAsistenteAutomático.cpp
-  cCaja.cpp
-  cCarrito.cpp
-  cCliente.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cCliente.cpp(46,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  cEmpleado.cpp
-  cEmpleadoFarmaceutico.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cEmpleadoFarmaceutico.cpp(38,17): error C2511: 'void cEmpleado::AgregarACarrito(cArticulos)': la función miembro sobrecargada no se ha encontrado en 'cEmpleado'
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cEmpleado.h(16): message : vea la declaración de 'cEmpleado'
-  cEmpleadoLimpieza.cpp
-  cEmpleadoOrtopedia.cpp
-  cEmpleadoPerfumeria.cpp
-  cFarmacia.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cFarmacia.cpp(62,29): warning C4930: 'cEmpleadoPerfumeria empleado1p(void)': no se ha llamado a la función prototipo (¿se pensó una definición de variable?)
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\cFarmacia.cpp(64,28): warning C4930: 'cEmpleadoOrtopedia empleado1o(void)': no se ha llamado a la función prototipo (¿se pensó una definición de variable?)
-  Main.cpp
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(16,39): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(23,135): error C2661: 'cCliente::cCliente': ninguna función sobrecargada acepta 10 argumentos
-  Generando código...
+﻿  Main.cpp
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(14,39): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\Tp_Farmacia_GS_VR\Main.cpp(25,39): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Tp_Farmacia_GS_VR.vcxproj -> D:\Users\Dario\Desktop\Universidad\Labo PR1\repositorioFarmacia\x64\Debug\Tp_Farmacia_GS_VR.exe

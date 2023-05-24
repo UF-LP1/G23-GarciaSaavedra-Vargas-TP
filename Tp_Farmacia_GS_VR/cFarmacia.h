@@ -24,7 +24,8 @@ public:
  * @param bool Estado
  * @param double GananciaTotal
  */
-cFarmacia(cCaja caja,string Nombre,string Direccion, time_t horario,const string telefono,bool estado,double gananciatotal,cAsistenteAutomatico asistente);
+
+cFarmacia(cCaja caja,string Nombre,string Direccion, string horario,const string telefono,bool estado,cAsistenteAutomatico asistente);
 ~cFarmacia();
 
 void EstadoFarmacia();
@@ -37,7 +38,7 @@ void ChequearStock(cArticulos);
  * @param cCliente
  * @param cArticulos
  */
-void RecibirCliente(cCliente,cArticulos);
+void RecibirCliente();
     
 /**
  * @param cCliente
@@ -48,7 +49,7 @@ private:
     cCaja Caja;
     string Nombre;
     string Direccion;
-    time_t Horario;
+    string Horario;
     const string Telefono;
     bool Estado;
     double GananciaTotal;

@@ -9,7 +9,6 @@
 #include <string>
 using namespace std;
 
-
 #include "cEmpleado.h"
 
 
@@ -21,7 +20,7 @@ public:
  * @param Dni
  * @param Horario
  */
-cEmpleadoLimpieza(const string NombreYAppelido, const string Dni, time_t Horario);
+cEmpleadoLimpieza(const string NombreYAppelido, const string Dni, queue<cCliente> listaclientes, string Horario);
 ~cEmpleadoLimpieza();
 void LimpiarYOrdenar();    
 

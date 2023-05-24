@@ -24,6 +24,10 @@ cArtMedicamento::cArtMedicamento(string nombredroga, double precio, const string
 
 }
 
+cArtMedicamento::cArtMedicamento()
+{
+}
+
 cArtMedicamento::~cArtMedicamento()
 {
 }
@@ -31,6 +35,6 @@ cArtMedicamento::~cArtMedicamento()
 /**
  * @return void
  */
-void cArtMedicamento::get_Dosis() {
-    return;
+string cArtMedicamento::get_Dosis() {
+    return Dosis;
 }

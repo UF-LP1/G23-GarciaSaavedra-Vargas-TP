@@ -1,9 +1,8 @@
 #include "cCarrito.h"
 
-cCarrito::cCarrito(const string idcarrito, int contproductos, double preciototal, vector<cArticulos*> articulos):Idcarrito(idcarrito)
+cCarrito::cCarrito(const string idcarrito, int contproductos, vector<cArticulos*> articulos):Idcarrito(idcarrito)
 {
 	this->Contproductos = contproductos;
-	this->Preciototal = preciototal;
 	this->Articulos = articulos;
 
 }
@@ -16,7 +15,7 @@ cCarrito::cCarrito()
 
 cCarrito::~cCarrito()
 {
-	// hacer los delete de los vectores
+	// hacer los delete de los vectores?
 	for (auto aux = Articulos.begin(); aux != Articulos.end(); ++aux) {
 		delete* aux;
 	}
@@ -35,8 +34,11 @@ void cCarrito::set_articulos(cArticulos* articulos1) //tengo que eliminar este p
 void cCarrito::set_PrecioTotal(double preciototal) {
 	this->Preciototal = preciototal;
 }
+double cCarrito::get_PrecioTotal() {
+	return this->Preciototal;
+}
 
-void cCarrito::SumarPrecios() { //metodo que adquiere los precios de los productos del carrito y los suma para tener un total
+void cCarrito::SumarPrecios() { //metodo que adquiere los precios de los productos del carrito y los suma para tener un total que se lo pasa al Preciototal
 	double precioaux{};
 	for (int i = 0; i < this->Articulos.size(); i++) {
 		

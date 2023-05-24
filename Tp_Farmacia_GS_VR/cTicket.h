@@ -18,7 +18,7 @@ public:
  * @param double PrecioFinal
  * @param eMediosDePago MetodosDePago
  */
-cTicket(string CodigoTicket, double preciofinal, eMediosDePago MetodoDePago);
+cTicket(const string CodigoTicket);
 cTicket();
 ~cTicket();
 
@@ -29,7 +29,6 @@ void set_preciof(double preciofinal);
 /**
  * @param cArticulos
  */
-
 
 private: 
     const string CodigoTicket;

@@ -5,8 +5,7 @@
 
 #ifndef _CCAJA_H
 #define _CCAJA_H
-//¿porque caja tendria que incluir a cliente si ya esta conectado por la farmacia?
-//#include "cCliente.h"
+
 #include "cCliente.h"
 
 class cCaja {
@@ -22,8 +21,8 @@ cCaja();
  * @param cCliente
  */
 double Cobrar(cCliente);
-
 double get_Saldo();
+void muestra_ticket(cCliente cliente);
 
 private: 
     double Saldo;

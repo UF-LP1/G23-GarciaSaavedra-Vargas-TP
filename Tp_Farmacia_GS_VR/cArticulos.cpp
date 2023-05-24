@@ -47,6 +47,11 @@ void cArticulos::set_Stock(double) {
     return;
 }
 
+double cArticulos::get_stock()
+{
+    return this->Stock;
+}
+
 /**
  * @param double
  * @return void

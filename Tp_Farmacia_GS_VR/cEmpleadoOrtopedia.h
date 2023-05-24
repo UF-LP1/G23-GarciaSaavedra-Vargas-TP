@@ -12,9 +12,8 @@
 class cEmpleadoOrtopedia: public cEmpleado {
 public: 
     
-cEmpleadoOrtopedia();
+cEmpleadoOrtopedia(string nombrefarmaceutico, const string dni, string horario, queue<cCliente> colaclientes);
 ~cEmpleadoOrtopedia();
-protected: 
     
 };
 

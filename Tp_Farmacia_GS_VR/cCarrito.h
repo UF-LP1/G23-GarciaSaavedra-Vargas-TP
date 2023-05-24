@@ -14,7 +14,7 @@ public:
     /**
      * @param double Saldo
      */
-    cCarrito(const string idcarrito, int contproductos, double preciototal, vector<cArticulos*> articulos);
+    cCarrito(const string idcarrito, int contproductos, vector<cArticulos*> articulos);
     cCarrito();
     ~cCarrito();
     vector<cArticulos*> get_VectorArticulos();
@@ -22,8 +22,8 @@ public:
     /**
      * @param cCliente
      */
-    //HACER UN SET Y UN GET PARA PODER MODIFICAR EL VECTOR DE ARTICULOS DESDE EMPLEADO
     void set_PrecioTotal(double preciototal);
+    double get_PrecioTotal();
     void SumarPrecios();
 
 private:
@@ -31,7 +31,6 @@ private:
     int Contproductos;
     double Preciototal;
     vector<cArticulos*> Articulos;
-
 };
 
 #endif //_CCARRITO_H

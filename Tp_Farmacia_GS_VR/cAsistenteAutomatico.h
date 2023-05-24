@@ -10,6 +10,7 @@
 class cAsistenteAutomatico {
 public: 
     
+cAsistenteAutomatico(int clientesAtendidos, queue<cCliente>nuevosclientes);
 cAsistenteAutomatico();
 ~cAsistenteAutomatico();
     
@@ -22,7 +23,7 @@ void contar_clientes();
 queue<cCliente> get_cola_clientes();
 
 private: 
-    static int clientesAtendidos;
+    int clientesAtendidos;
     queue<cCliente> nuevosclientes;
 };
 

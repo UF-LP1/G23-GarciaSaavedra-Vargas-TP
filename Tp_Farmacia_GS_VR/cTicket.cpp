@@ -9,22 +9,22 @@
  * cTicket implementation
  */
 
-
 /**
  * @param string CodigoTicket
  * @param double PrecioFinal
  * @param eMediosDePago MetodosDePago
  */
-cTicket::cTicket(string codigoticket, double preciofinal, eMediosDePago metodosdepago):CodigoTicket(codigoticket)
+
+cTicket::cTicket(const string codigoticket):CodigoTicket(codigoticket)
 {
-    this->PrecioFinal = preciofinal;
-    this->MetodoDePago = metodosdepago;
+    this->MetodoDePago = Efectivo;
+    this->PrecioFinal = 0.0;
 
 }
 cTicket::cTicket()
 {
-    this->PrecioFinal = 0;
-    this->MetodoDePago = Debito;
+    this->PrecioFinal = 0.0;
+    this->MetodoDePago = Efectivo;
 }
 cTicket:: ~cTicket()
 {

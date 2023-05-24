@@ -10,8 +10,11 @@
  */
 
 
-cAsistenteAutomatico::cAsistenteAutomatico() {
+cAsistenteAutomatico::cAsistenteAutomatico(int clientesAtendidos,queue<cCliente>nuevosclientes) {
 
+}
+cAsistenteAutomatico::cAsistenteAutomatico()
+{
 }
 cAsistenteAutomatico::~cAsistenteAutomatico() {
 

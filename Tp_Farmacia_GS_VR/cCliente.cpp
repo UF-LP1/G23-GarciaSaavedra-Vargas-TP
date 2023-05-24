@@ -16,14 +16,21 @@
  * @param string ProductoAComprar
  */
 
- cCliente::cCliente(cTicket ticket,string nombreYApellido,double dni, eMediosDePago MedioDePago, string mail, eNecesidad Necesidad, vector<cArticulos*> productosAComprar, double billetera,cCarrito carrito):Dni(dni){
+ cCliente::cCliente(string nombreYApellido,double dni, string mail, eNecesidad Necesidad, vector<cArticulos*> productosAComprar, double billetera,cCarrito carrito):Dni(dni){
      this->NombreYApellido = nombreYApellido;
      this->ProductosAComprar = productosAComprar;
      this->Billetera = billetera;
+     this->Ticket = nullptr;
+     this->MediosDePago = Efectivo;
+     
  }
  cCliente::cCliente():Dni(0) {
      this->Billetera = 0;
-     this->Necesidad = Pami;
+     this->Necesidad = Particular;
+     this->MediosDePago = Efectivo;
+     this->Ticket = nullptr;
+
+
  }
 
  cCliente::~cCliente(){
@@ -36,7 +43,6 @@
 void cCliente::SeleccionarProducto(const double Codigo,cArticulos* articulos, vector<cArticulos*> productosAComprar) {
    
     this->ProductosAComprar.push_back(articulos);
-
 }
 
 /**
@@ -62,7 +68,8 @@ void cCliente::SeleccionarMedioPago() {
         opcionSeleccionada = PagoCelular;
         break;
     }
-    this->ticket.set_MetodoDePago(opcionSeleccionada);
+    Ticket->set_MetodoDePago(opcionSeleccionada);
+    this->MediosDePago = opcionSeleccionada;
 }
 
 /**
@@ -93,12 +100,26 @@ void cCliente::set_Billetera(double billetera) {
     this->Billetera = billetera;
 }
 
+eMediosDePago cCliente::get_MediosDePago() {
+    return this->MediosDePago;
+}
+
+string cCliente::get_datos()
+{
+    return this->NombreYApellido;
+}
+
 
 /**
  * @param cTicket
  * @return void
  */
-cTicket cCliente::RecibirTicket() {
+cTicket* cCliente::get_Ticket() {
    
-    return ticket;
+    return Ticket;
+}
+
+void cCliente::set_ticket(cTicket* ticket)
+{
+    this->Ticket = ticket;
 }

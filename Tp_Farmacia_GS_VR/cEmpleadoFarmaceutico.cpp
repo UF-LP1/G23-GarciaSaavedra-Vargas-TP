@@ -10,8 +10,9 @@
 /**
  * @param const string Matricula
  */
-cEmpleadoFarmaceutico::cEmpleadoFarmaceutico(string matricula)
-    :cEmpleado(NombreYApellido, Dni, Horario,listaclientes){
+cEmpleadoFarmaceutico::cEmpleadoFarmaceutico(string nombrefarmaceutico,const string dni,string horario,queue<cCliente> colaclientes, string matricula)
+    :cEmpleado(NombreYApellido, Dni, Horario,colaclientes){
+    this->Matricula = matricula;
 }
 cEmpleadoFarmaceutico::cEmpleadoFarmaceutico() {
 
@@ -25,17 +26,18 @@ cEmpleadoFarmaceutico::~cEmpleadoFarmaceutico()
  * @return void
  */
 void cEmpleadoFarmaceutico::AplicarDescuento() {//es un metodo que analiza que cobertura tiene el cliente y en base a eso aplica descuento
-    for (int i = 0; i < this->listaclientes.size(); i++) {
+    while(!listaclientes.empty()) {
 
-
-        cCliente cliaux = this->listaclientes[i];
-        cTicket ticketaux = cliaux.RecibirTicket();
+        cCliente cliaux = listaclientes.front();
+        listaclientes.pop();
+        
+        cTicket* ticketaux = cliaux.get_Ticket();
         if (cliaux.get_necesidad() == ObraSocial)
         {
-            ticketaux.set_preciof(ticketaux.get_PrecioFinal() * 0.6);
+            ticketaux->set_preciof(ticketaux->get_PrecioFinal() * 0.6);
         }
         else if (cliaux.get_necesidad() == Pami) {
-            ticketaux.set_preciof(ticketaux.get_PrecioFinal() * 0.9);
+            ticketaux->set_preciof(ticketaux->get_PrecioFinal() * 0.9);
         }
     }
 }

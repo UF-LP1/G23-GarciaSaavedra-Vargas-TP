@@ -28,7 +28,7 @@ public:
  * @param string ProductoAComprar
  */
    
-cCliente(cTicket ticket,string nombreYApellido,const double dni, eMediosDePago mediodepago, string mail,eNecesidad Necesidad,vector<cArticulos*> productosAComprar, double billetera,cCarrito carrito);
+cCliente(string nombreYApellido,const double dni, string mail,eNecesidad Necesidad,vector<cArticulos*> productosAComprar, double billetera,cCarrito carrito);
 cCliente();
 ~cCliente();
 
@@ -42,12 +42,16 @@ void set_Billetera(double billetera);
 eNecesidad get_necesidad();
 cCarrito get_Carrito();
 vector<cArticulos*> get_Productos();
-cTicket RecibirTicket();
+cTicket* get_Ticket();
+void set_ticket(cTicket* ticket);
+eMediosDePago get_MediosDePago();
+string get_datos();
+
 /**
  * @param cTicket
  */
 private: 
-    cTicket ticket;
+    cTicket* Ticket;
     string NombreYApellido;
     vector<cArticulos*> ProductosAComprar;
     const double Dni;

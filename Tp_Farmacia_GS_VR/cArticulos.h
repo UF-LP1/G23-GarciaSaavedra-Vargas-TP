@@ -29,7 +29,7 @@ public:
      * @param double
      */
     void set_Stock(double);
-
+    double get_stock();
     /**
      * @param double
      */
